@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Basion 的 Ai 小屋 🛖
 
-## Getting Started
+> 和 AI 一起，做更有趣的事 · Build wonder with AI
 
-First, run the development server:
+一个基于 Next.js 16 + Tailwind v4 的个人 AI 学习笔记站点，Claude design 风格，支持暗色模式。
+
+## 本地开发
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 加新文章
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+在 `content/posts/` 新建一个 `xxx.md`，开头加 frontmatter：
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```yaml
+---
+title: 文章标题
+description: 一句话简介（卡片上显示）
+date: 2026-05-10
+tag: 工具地图
+---
+```
 
-## Learn More
+文件名（去掉 `.md`）就是文章 URL slug。
 
-To learn more about Next.js, take a look at the following resources:
+## 部署到服务器
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+./deploy.sh
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+脚本会本地构建 → standalone 打包 → rsync 到服务器 → PM2 重启。
 
-## Deploy on Vercel
+## 技术栈
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js 16 (App Router, standalone output)
+- Tailwind CSS v4
+- next-themes（暗色模式）
+- remark + gray-matter（Markdown 渲染）
+- Inter / Source Serif 4 / JetBrains Mono
+- PM2 + nginx 反代（生产部署）
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 项目结构
+
+```
+src/
+├── app/                    # 页面路由
+│   ├── layout.tsx          # 根布局 + 主题
+│   ├── page.tsx            # 首页（Hero + 文章网格）
+│   └── posts/[slug]/       # 文章详情
+├── components/             # Hero、Nav、ThemeToggle、PostCard、Footer
+└── lib/posts.ts            # Markdown 加载与渲染
+
+content/posts/              # 你的文章（md 文件）
+```

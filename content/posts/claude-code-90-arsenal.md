@@ -90,6 +90,63 @@ tag: Claude Code
 
 ---
 
+## 🎨 内容创作者专属:写作 + 全平台分发(2026 实测精选)
+
+如果你是做公众号、小红书、自媒体的,这一节单独给你。下面都是**真实存在、口碑靠前**的开源技能,按"写好一篇 → 一稿多发 → 中文平台专属"三步给你配齐。
+
+> ⚠️ 先说句大实话:这个圈子 2026 年爆发式生长,**鱼龙混杂、星标注水的不少**。下面这些是相对靠谱的,但**装之前自己点进去瞄一眼 SKILL.md** 再决定。
+
+### 第一步 · 写好一篇(写作 / 改稿 / 查证)
+
+| 工具 | 替你干嘛 | 链接 |
+|------|----------|------|
+| **humanizer**(去 AI 腔头号) | 揪出 30 多种"一看就是 AI 写的"毛病并改掉,可校准成你的文风 | [blader/humanizer](https://github.com/blader/humanizer) |
+| **Brand Voice**(官方·品牌口吻) | Anthropic 官方出品,把你的品牌调性固化成护栏,全渠道统一 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) |
+| **content-research-writer** | 边写边查资料、加引用、强化开头钩子、逐段给反馈,还保留你的声音 | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) |
+| **claude-blog**(长文工厂) | 整条长文流水线,**会逐条 fetch 引用源做事实核查**、卡 AI 味、过质量门才放行 | [AgriciDaniel/claude-blog](https://github.com/AgriciDaniel/claude-blog) |
+| **SEO Machine** | 完整 SEO 文章工作台(选题→写 2000+ 字→优化→发 WordPress),主打"零编造事实" | [TheCraigHewitt/seomachine](https://github.com/TheCraigHewitt/seomachine) |
+
+### 第二步 · 一稿多发(一篇 → 各平台版本)
+
+| 工具 | 替你干嘛 | 链接 |
+|------|----------|------|
+| **claudecode-writer** | 喂它你的文风样本,一条思路自动产出长文 + LinkedIn/推文/Newsletter 各平台版 | [WomenDefiningAI/claudecode-writer](https://github.com/WomenDefiningAI/claudecode-writer) |
+| **cn-content-matrix** | **真·风格迁移**(不是套模板),一个主题改写成小红书/公众号/抖音/B站原生口吻 | [skill-cn-content-matrix](https://github.com/fullstackcrew-alpha/skill-cn-content-matrix) |
+
+> 💡 懒人最低门槛:不想配 API,就让 Claude 直接导出一份排期 CSV,导进 Buffer / Typefully 去发——零密钥。
+
+### 第三步 · 中文平台专属(小红书 / 公众号 / 抖音)
+
+**公众号(目前最成熟)**
+
+| 工具 | 替你干嘛 | 链接 |
+|------|----------|------|
+| **wewrite** | 公众号全流程 8 段:抓热点→选题→找素材→带风格写作→SEO 校验→配图→排版发草稿箱 | [oaker-io/wewrite](https://github.com/oaker-io/wewrite) |
+| **md2wechat-skill** | Markdown 一键转公众号排版 + 配图 + 批量发,免费档够用 | [geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) |
+
+**小红书**
+
+| 工具 | 替你干嘛 | 链接 |
+|------|----------|------|
+| **xhs-studio** | 小红书全流程:热点搜索→内容创作→一键发布 | [waynefu2020/xhs-studio](https://github.com/waynefu2020/xhs-studio) |
+| **归藏社交卡片** | 生成小红书 3:4 图文卡 / 公众号封面,28 种排版、设计感强(作者是知名 AI 创作者归藏) | [op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) |
+
+**抖音 / 短视频**
+
+| 工具 | 替你干嘛 | 链接 |
+|------|----------|------|
+| **短视频爆款开头** | 100 个钩子公式 + 10 种心理触发,给你 3 个可测试的开场白 | [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) |
+| **videocut-skills** | 基于 Claude Code 的剪辑代理:转写→AI 审片→剪 | [Ceeon/videocut-skills](https://github.com/Ceeon/videocut-skills) |
+
+### 中文创作者的找货入口
+
+- **[laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh)** —— 中文平台技能**最好的枢纽**,100+ 精选、分类清楚,上面大半工具都能在这儿找到。
+- 英文世界则看 [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) 和官方 [anthropics/skills](https://github.com/anthropics/skills)。
+
+> 📌 一个诚实的空白:**视频号、知乎** 目前几乎没有成熟的专门技能,只能靠通用写作技能 + 手动搬运。这反过来也是机会——等你学会了模块六,说不定第一个补这个坑的就是你。
+
+---
+
 ## ⚠️ 三条选装原则(别犯新手的贪心病)
 
 1. **缺什么装什么,别囤货。** 装一堆用不上的技能,就像买一墙工具却只拧过一颗螺丝——还白占地方。

@@ -3,3 +3,12 @@
 
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
+
+# 课程写作风格（IMPORTANT —— 写/改 content/posts/ 课程文章时 YOU MUST 遵守）
+
+这是面向**新手、非技术人群**的讲课材料。核心要求一句话:**讲课要形象生动,别堆专业术语。**
+
+- **少用术语,多用比喻。** 任何专业词(上下文窗口、token、Hook、子代理、分类器、Plan Mode……)第一次出现,必须先用一个**生活化的画面**讲清楚它"像什么",再带出术语名。能不出现的英文/技术词就别出现。
+- **用画面和场景,不用定义。** 多讲"想象一下……""就好比……",把抽象概念变成看得见、摸得着的东西(写字台、实习生、安检员、流水线、绊线机关)。
+- **像当面讲课一样说话。** 短句、口语、有节奏、有温度;可以适当用"你看""说白了""扎心的是"这类口吻。
+- **保留干货,只换说法。** 命令、事实、结构、交叉引用、署名都要保留准确,改的只是"怎么把它讲得让人秒懂"。

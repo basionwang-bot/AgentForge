@@ -23,7 +23,44 @@ export const courseEntries: CourseEntry[] = [
   { slug: "claude-code-06-config", label: "模块六", blurb: "环境配置：一次配置，长期省力" },
   { slug: "claude-code-07-automation", label: "模块七", blurb: "自动化：让 Claude 在你不在场时干活 ⭐" },
   { slug: "claude-code-08-pitfalls", label: "模块八", blurb: "五大典型翻车现场：症状 + 解药" },
+  { slug: "claude-code-90-arsenal", label: "加餐", blurb: "技能武器库：给你的 agent 装上现成的好工具" },
   { slug: "claude-code-99-cheatsheet", label: "附录", blurb: "命令速查表 + 官方资料" },
+];
+
+// 学完能干嘛（学习成果）
+export const courseOutcomes: string[] = [
+  "把 AI 当一个「能动手的同事」来带，而不是问一句答一句的聊天框",
+  "写出「第一次就听懂」的指令，把来回返工降到最低",
+  "让它自己跑检查、自己改到对——你敢放心走开，而不用盯着",
+  "管好它的「记忆」，不再越用越笨、越聊越乱",
+  "给自己配一套专属工作环境：工位便利贴、自动机关、技能抽屉",
+  "让它在你不在场时，按时、批量、自动替你把活干了",
+];
+
+// 适合人群（跨行业，不止程序员）。scene 是一句话的真实场景。
+export type CourseAudience = { role: string; scene: string };
+export const courseAudiences: CourseAudience[] = [
+  { role: "运营 / 行政", scene: "几百份杂乱文件、表格、PDF，自动改名归类、一键生成周报月报" },
+  { role: "市场 / 增长", scene: "批量生成上百条文案变体，清洗投放数据，揪出表现差的素材" },
+  { role: "销售", scene: "把「找线索 → 补全信息 → 发外联」串成一条不用手动的流水线" },
+  { role: "财务 / 会计", scene: "一堆流水自动整理成分类报表、对账，写成老板看得懂的大白话财报" },
+  { role: "法务 / 合规", scene: "批量审合同、做合规检查，搭个「快速找到对的人」的内部小工具" },
+  { role: "数据 / 分析", scene: "用大白话问数据、清洗数据集、生成看板，不用写 SQL 和透视表" },
+  { role: "电商运营", scene: "按订单和客户数据做人群分层，自动揪出可疑订单提醒人工复核" },
+  { role: "老师 / 培训师", scene: "照课程标准搭课件、分层教案、配套测验和评分量规" },
+  { role: "HR / 人力", scene: "人力规划、绩效校准、薪酬复盘，有现成框架陪你一步步走" },
+  { role: "产品 / 创始人", scene: "不用请外包，自己搭个内部小工具或小网页，先把想法验证了" },
+  { role: "研究 / 写作者", scene: "边写边查证加引用、逐段给反馈；翻几年笔记自动汇总成进展报告" },
+];
+
+// 前置要求（诚实但低门槛）
+export type CoursePrereq = { need: string; note: string };
+export const coursePrereqs: CoursePrereq[] = [
+  { need: "一台电脑", note: "Mac / Windows / Linux 都行" },
+  { need: "一个 Claude 订阅", note: "Pro 或 Max 套餐，Claude Code 就包含在里面" },
+  { need: "愿意打开「终端」", note: "就是那个黑底白字的命令行窗口——开篇会手把手带你，不可怕" },
+  { need: "会把事情讲清楚", note: "不需要会编程！但要能像交代同事一样把活说明白" },
+  { need: "一点点耐心", note: "把它当新来的实习生「带」，而不是指望一句话读心" },
 ];
 
 export type CoursePath = {

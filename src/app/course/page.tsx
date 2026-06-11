@@ -1,11 +1,23 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, BookOpen, Sparkles } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowUpRight,
+  BookOpen,
+  Check,
+  ClipboardList,
+  Sparkles,
+  Target,
+  Users,
+} from "lucide-react";
 import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/posts";
 import {
   COURSE_SUBTITLE,
   COURSE_TITLE,
+  courseAudiences,
+  courseOutcomes,
   coursePaths,
+  coursePrereqs,
   courseEntries,
 } from "@/lib/course";
 
@@ -54,6 +66,91 @@ export default async function CoursePage() {
           <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </Link>
       </header>
+
+      {/* 学习成果 */}
+      <section className="mt-12">
+        <div className="flex items-center gap-2">
+          <Target className="h-5 w-5 text-[var(--accent)]" />
+          <h2 className="font-serif text-2xl font-semibold tracking-tight">
+            学完你能干嘛
+          </h2>
+        </div>
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          {courseOutcomes.map((outcome) => (
+            <div
+              key={outcome}
+              className="flex items-start gap-3 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4"
+            >
+              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-[var(--accent-foreground)]">
+                <Check className="h-3 w-3" />
+              </span>
+              <span className="text-sm leading-relaxed text-[var(--card-foreground)]">
+                {outcome}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 适合人群（跨行业） */}
+      <section className="mt-12">
+        <div className="flex items-center gap-2">
+          <Users className="h-5 w-5 text-[var(--accent)]" />
+          <h2 className="font-serif text-2xl font-semibold tracking-tight">
+            适合谁学（不止程序员）
+          </h2>
+        </div>
+        <p className="mt-2 text-sm text-[var(--muted-foreground)]">
+          这套方法的核心是「把 AI 当能干活的同事来管」——和你做哪一行无关。各行各业都能对号入座：
+        </p>
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {courseAudiences.map((a) => (
+            <div
+              key={a.role}
+              className="rounded-2xl border border-[var(--border)] bg-[var(--card)] p-5"
+            >
+              <p className="text-sm font-semibold text-[var(--accent)]">
+                {a.role}
+              </p>
+              <p className="mt-1.5 text-sm leading-relaxed text-[var(--muted-foreground)]">
+                {a.scene}
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-4 text-xs text-[var(--muted-foreground)]">
+          没找到你这一行？别担心——只要你的工作里有「重复、繁琐、又得你亲自盯着」的活，这套方法就用得上。
+        </p>
+      </section>
+
+      {/* 前置要求 */}
+      <section className="mt-12">
+        <div className="flex items-center gap-2">
+          <ClipboardList className="h-5 w-5 text-[var(--accent)]" />
+          <h2 className="font-serif text-2xl font-semibold tracking-tight">
+            开课前，你需要准备
+          </h2>
+        </div>
+        <ul className="mt-6 space-y-3">
+          {coursePrereqs.map((p) => (
+            <li
+              key={p.need}
+              className="flex flex-col gap-1 rounded-2xl border border-[var(--border)] bg-[var(--card)] p-4 sm:flex-row sm:items-baseline sm:gap-3"
+            >
+              <span className="shrink-0 font-medium text-[var(--card-foreground)]">
+                {p.need}
+              </span>
+              <span className="text-sm leading-relaxed text-[var(--muted-foreground)]">
+                {p.note}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4 rounded-2xl border border-dashed border-[var(--border)] p-4 text-sm leading-relaxed text-[var(--muted-foreground)]">
+          💡 一句话总结门槛：<span className="font-medium text-[var(--card-foreground)]">不需要会写代码，需要会把事情说清楚。</span>
+          剩下的，课程带你一步步上手。
+        </p>
+      </section>
 
       {/* 三条学习路线 */}
       <section className="mt-12">

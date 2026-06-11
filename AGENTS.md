@@ -16,3 +16,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - **用画面和场景,不用定义。** 多讲"想象一下……""就好比……",把抽象概念变成看得见、摸得着的东西(写字台、实习生、安检员、流水线、绊线机关)。
 - **像当面讲课一样说话。** 短句、口语、有节奏、有温度;可以适当用"你看""说白了""扎心的是"这类口吻。
 - **保留干货,只换说法。** 命令、事实、结构、交叉引用、署名都要保留准确,改的只是"怎么把它讲得让人秒懂"。
+
+# 新增课程文章时(YOU MUST)
+
+新增 `content/posts/claude-code-*.md` 课程文章后,**必须同步**在 [`src/lib/course.ts`](src/lib/course.ts) 的 `courseEntries` 数组登记一行,否则文章虽能按 URL 访问,但会在**课程目录页(/course)和文末上一篇/下一篇导航里凭空消失**。(独立的非课程文章不需要这步。)

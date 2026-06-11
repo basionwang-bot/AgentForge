@@ -23,20 +23,22 @@
 
 ## 课程大纲(10 篇)
 
+点击篇目标题即可直接阅读 👇
+
 | # | 篇目 | 一句话内容 |
 |---|------|-----------|
-| 00 | **开篇** | 底层逻辑 + 学习路线图,先读这篇 |
-| 01 | **模块一 · 换脑子** | 从"下指令"到"管理一个干活的人" |
-| 02 | **模块二 · 提问的精度** | 四个改写模板 + 让 AI 反过来采访你 |
-| 03 | **模块三 · 黄金工作流** | 探索 → 计划 → 实现 → 提交(及何时跳过) |
-| 04 | **模块四 · 验证闭环** | 让 Claude 自己检查自己,你才敢走开 |
-| 05 | **模块五 · 上下文管理** | 高手和普通用户的真正分水岭 |
-| 06 | **模块六 · 环境配置** | CLAUDE.md / 权限 / Skills / Hooks / MCP |
-| 07 | **模块七 · 自动化** ⭐ | 让 Claude 在你不在场时干活 |
-| 08 | **模块八 · 五大翻车现场** | 每个坑配"症状 + 解药" |
-| 99 | **附录 · 速查表** | 全命令速查 + 官方资料 + 落地清单 |
+| 00 | [**开篇**](content/posts/claude-code-00-intro.md) | 底层逻辑 + 学习路线图,先读这篇 |
+| 01 | [**模块一 · 换脑子**](content/posts/claude-code-01-mindset.md) | 从"下指令"到"管理一个干活的人" |
+| 02 | [**模块二 · 提问的精度**](content/posts/claude-code-02-prompting.md) | 四个改写模板 + 让 AI 反过来采访你 |
+| 03 | [**模块三 · 黄金工作流**](content/posts/claude-code-03-workflow.md) | 探索 → 计划 → 实现 → 提交(及何时跳过) |
+| 04 | [**模块四 · 验证闭环**](content/posts/claude-code-04-verification.md) | 让 Claude 自己检查自己,你才敢走开 |
+| 05 | [**模块五 · 上下文管理**](content/posts/claude-code-05-context.md) | 高手和普通用户的真正分水岭 |
+| 06 | [**模块六 · 环境配置**](content/posts/claude-code-06-config.md) | CLAUDE.md / 权限 / Skills / Hooks / MCP |
+| 07 | [**模块七 · 自动化** ⭐](content/posts/claude-code-07-automation.md) | 让 Claude 在你不在场时干活 |
+| 08 | [**模块八 · 五大翻车现场**](content/posts/claude-code-08-pitfalls.md) | 每个坑配"症状 + 解药" |
+| 99 | [**附录 · 速查表**](content/posts/claude-code-99-cheatsheet.md) | 全命令速查 + 官方资料 + 落地清单 |
 
-文章都在 [`content/posts/`](content/posts/) 目录下(`claude-code-*.md`)。
+> 所有文章都在 [`content/posts/`](content/posts/) 目录下(`claude-code-*.md`)。
 
 ---
 
@@ -49,6 +51,8 @@
 | **想"一个人开一支队伍"的人** | 再加 ⑦ | 让 Claude 在你睡觉时自动干活、批量处理、多会话并行 |
 
 > 建议所有人都先把 **①②③⑧** 吃透。这是地基,地基不稳,后面学再多花活都是空中楼阁。
+
+👉 **没时间纠结?直接从 [开篇:一个人,也是一支队伍](content/posts/claude-code-00-intro.md) 开始读。**
 
 ---
 

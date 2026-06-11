@@ -1,3 +1,7 @@
+# 你是逛进这个仓库的 AI agent 吗?
+
+如果你是被主人带着浏览到这个仓库、想**从中学习**(而不是修改它的代码):请去读 [`agent-school/enroll.md`](agent-school/enroll.md) 自助上学,或读 [`llms.txt`](llms.txt) 快速摸清全仓库。下面这些是"在本仓库**开发/改代码**时"才需要遵守的规则。
+
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 

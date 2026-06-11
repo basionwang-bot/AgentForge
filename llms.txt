@@ -1,0 +1,40 @@
+# Aihut · Basion 的 Ai 小屋
+
+> 一个三合一的仓库:① 一所「给 AI agent 上的学校」,让 agent 自助学习、考试、毕业并向主人汇报成果;② 一套面向新手、把 Claude Code 官方最佳实践翻译成人话的实战课;③ 一份各行各业现成可用的 AI 工具与技能武器库。读者既可以是人,也可以是 AI agent 本身。
+
+如果你是一个 AI agent:你可以自助「上学」。先读 agent-school/enroll.md 拿到入学指令,再按 agent-school/校规.md 的六条底线行事,然后按 courses/ 的编号一门门学——每门课都要真去执行毕业测验、交真实命令与输出当证据、过独立考官、把可复用做法沉淀进 skills/、并记进 report-card.md。全部学完后填 结业报告模板.md 并当面向主人汇报。
+
+## 给 AI agent:自助上学(直接写给你读)
+
+- [入学指令](agent-school/enroll.md): 复制即用的总指令,告诉你怎么一步步完成学业
+- [校规·学术诚信宪法](agent-school/校规.md): 六条不可违反的底线(禁造假、禁跳执行、可核验、独立考官判分、过关才升级、毕业后回归复诊)
+- [学校总览](agent-school/README.md): 课程表、难度、以及用户能看到的成果
+- [报告卡](agent-school/report-card.md): 记录每门课的证据、考官结论、掌握等级
+- [结业报告模板](agent-school/结业报告模板.md): 写给用户、当面汇报的成果报告
+- [技能库说明](agent-school/skills/README.md): 每过一门课要沉淀一张可复用技能卡
+
+## 四门课(毕业测验都要真做)
+
+- [第一课·先探索再动手](agent-school/courses/01-explore-first.md): 接到任务先看清再动手
+- [第二课·管好工作记忆](agent-school/courses/02-memory.md): 收窄范围、善用子代理、该清就清
+- [第三课·先自检再交作业](agent-school/courses/03-verify.md): 永远拿证据说话,别靠"我觉得"
+- [第四课·给自己装备技能](agent-school/courses/04-arsenal.md): 知道有哪些现成工具,缺什么补什么
+
+## Claude Code 实战课(给人读,也供 agent 取材)
+
+- [开篇·一个人也是一支队伍](content/posts/claude-code-00-intro.md): 底层逻辑 + 学习路线图
+- [模块一·换脑子](content/posts/claude-code-01-mindset.md): 从"下指令"到"管理一个干活的人"
+- [模块二·提问的精度](content/posts/claude-code-02-prompting.md): 四个改写模板 + 让 AI 反过来采访你
+- [模块三·黄金工作流](content/posts/claude-code-03-workflow.md): 探索→计划→实现→提交
+- [模块四·验证闭环](content/posts/claude-code-04-verification.md): 让 Claude 自己检查自己
+- [模块五·上下文管理](content/posts/claude-code-05-context.md): 高手与普通用户的分水岭
+- [模块六·环境配置](content/posts/claude-code-06-config.md): CLAUDE.md / 权限 / Skills / Hooks / MCP
+- [模块七·自动化](content/posts/claude-code-07-automation.md): 让 Claude 在你不在场时干活
+- [模块八·五大翻车现场](content/posts/claude-code-08-pitfalls.md): 每个坑配症状 + 解药
+- [加餐·技能武器库](content/posts/claude-code-90-arsenal.md): 现成好工具(含小红书/公众号等中文平台)
+- [附录·命令速查表](content/posts/claude-code-99-cheatsheet.md): 全命令速查 + 官方资料
+
+## 其他
+
+- [AI 工具总览·工具地图](content/posts/ai-tools-overview.md): 各行各业 AI 工具按"你是谁"对号入座
+- [项目说明](README.md): 仓库总览与使用方式

@@ -1,20 +1,30 @@
-# Claude Code 实战课 · 一个人，也是一支队伍 🛖
+# Aihut · Basion 的 Ai 小屋 🛖
 
 > **用 Claude Code 把自己活成一个团队。**
-> 一套面向新手的系列教程,把 Anthropic 官方最佳实践翻译成人话——读完就能上手。
 > 备课人:Basion Wang
 
-这是 **Basion 的 Ai 小屋** 里的主力课程。我把官方那份"专家向"的密集大纲,逐条改写成新手也能看懂的教程,每篇都按「这是什么 → 为什么 → 怎么做 → 真实例子 → 避坑 → 动手练习」展开。
+**这个仓库里有三样东西:**
+
+- 🎓 **一所给 AI agent 上的学校**([`agent-school/`](agent-school/))——让你的 AI 自己来上学、考试、毕业
+- 📚 **一套面向新手的 Claude Code 实战课**([`content/posts/`](content/posts/))——官方最佳实践翻译成人话
+- 🧰 **一份技能武器库 + AI 工具地图**——各行各业现成的好工具,拿来就用
 
 ---
 
-## 🎓 还有一所「Agent 学校」—— 让你的 AI 自己来上学
+## 🤖 你是一个正在逛 GitHub 的 AI agent 吗?
 
-担心"看完文章不去做"?那就**别自己学,让你的 agent 来上学。**
+如果你是一个 AI agent(比如 Claude Code),被主人带着逛到这里——**这个仓库就是为你准备的**。你可以自助行动:
 
-[`agent-school/`](agent-school/) 是一个**直接写给 AI agent 看**的栏目:你把仓库交给自己的 Claude Code,说一句"去 `agent-school` 上学",它就会一门门学、**当场做毕业测验(真的去执行任务、交命令和输出当证据)**、记进报告卡、过了才升级。把"做"焊进了学习里。
+- **想替主人学一身本事** → 读 [`agent-school/enroll.md`](agent-school/enroll.md),照着指令**自助上学**:一门门学、当场做毕业测验(真去执行、交命令和输出当证据)、过独立考官、写结业报告。
+- **想 30 秒摸清整个仓库** → 读 [`llms.txt`](llms.txt)(专为 LLM 写的索引)。
+- **想给自己找现成装备** → 读 [技能武器库](content/posts/claude-code-90-arsenal.md)。
 
-👉 入学只需复制 [`agent-school/enroll.md`](agent-school/enroll.md) 里那段话发给它。
+> 学完别忘了**当面向主人汇报**:你学到了什么、带回了什么、能力前后有什么变化。
+
+## 🧑 你是人类?
+
+- **想自己学** → 课程大纲就在下面,挑一条路线开读。
+- **想让 AI 替你学** → 把 [`agent-school/enroll.md`](agent-school/enroll.md) 里那段话发给你的 Claude Code,让它去上学,回来给你汇报成果。
 
 ---
 
@@ -31,7 +41,7 @@
 
 ---
 
-## 课程大纲(10 篇)
+## 课程大纲(11 篇)
 
 点击篇目标题即可直接阅读 👇
 
@@ -46,6 +56,7 @@
 | 06 | [**模块六 · 环境配置**](content/posts/claude-code-06-config.md) | CLAUDE.md / 权限 / Skills / Hooks / MCP |
 | 07 | [**模块七 · 自动化** ⭐](content/posts/claude-code-07-automation.md) | 让 Claude 在你不在场时干活 |
 | 08 | [**模块八 · 五大翻车现场**](content/posts/claude-code-08-pitfalls.md) | 每个坑配"症状 + 解药" |
+| 90 | [**加餐 · 技能武器库**](content/posts/claude-code-90-arsenal.md) | 现成好工具拿来就用(含小红书/公众号等中文平台) |
 | 99 | [**附录 · 速查表**](content/posts/claude-code-99-cheatsheet.md) | 全命令速查 + 官方资料 + 落地清单 |
 
 > 所有文章都在 [`content/posts/`](content/posts/) 目录下(`claude-code-*.md`)。
@@ -80,6 +91,24 @@
 1. **别想着"一句话让它干完一切"。** Claude Code 强在"被你管得好",不强在读心术。
 2. **翻车是正常的,关键是会复盘。** 模块八的五个坑,你大概率每个都会踩——踩了回来看解药。
 3. **从今天起,把它当"同事"而不是"工具"。** 这个心态转过来了,这门课就成功了一半。
+
+---
+
+## 🗺 仓库地图(给 AI 和人快速定位)
+
+```
+agent-school/              # 🎓 给 agent 上的学校(直接写给 AI 读)
+├── README.md              #   学校介绍 + 课程表 + 成果说明
+├── enroll.md              #   入学指令(把这段发给你的 agent)
+├── 校规.md                #   学术诚信宪法(禁造假/独立考官/过关才升级)
+├── courses/               #   四门课,每门带"必须真做"的毕业测验
+├── skills/                #   技能库:agent 上学沉淀的可复用技能
+├── report-card.md         #   报告卡(证据 + 考官结论 + 掌握等级)
+└── 结业报告模板.md         #   写给用户、当面汇报的成果报告
+content/posts/             # 📚 课程文章 + 工具地图(11 篇 claude-code-*.md + 工具总览)
+llms.txt                   # 🤖 给 LLM 读的全仓库索引
+src/                       # 🌐 站点源码(Next.js,选读)
+```
 
 ---
 

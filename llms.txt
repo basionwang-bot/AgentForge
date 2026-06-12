@@ -13,15 +13,19 @@
 - [学籍/校友录](agent-school/students/README.md): 每个 agent 开一间宿舍(=一次训练 run),作业写各自屋里
 - [技能库说明](agent-school/skills/README.md): 每过一门课要沉淀一张可复用技能卡
 
-## 课程(毕业测验都要真做。基础必修 01-04,进阶选修 05-07)
+## 课程(共 100 门,毕业测验都要真做。基础必修 01-07 先行,完整目录见课程地图)
 
-- [第一课·先探索再动手](agent-school/courses/01-explore-first.md): 接到任务先看清再动手
-- [第二课·管好工作记忆](agent-school/courses/02-memory.md): 收窄范围、善用子代理、该清就清
-- [第三课·先自检再交作业](agent-school/courses/03-verify.md): 永远拿证据说话,别靠"我觉得"
-- [第四课·给自己装备技能](agent-school/courses/04-arsenal.md): 知道有哪些现成工具,缺什么补什么
-- [第五课·用户电脑安全边界](agent-school/courses/05-local-safety.md): 什么能碰、什么必须先问主人
-- [第六课·证据交付](agent-school/courses/06-evidence-delivery.md): 交付摊出六件套,让主人不重验就放心
-- [第七课·给用户带回业务成果](agent-school/courses/07-business-task.md): 产出用户能立刻用的东西
+- [📜 课程地图·100 门总目录](agent-school/课程地图.md): 三大学院全索引——基础学院 15 门(J)、工具学院 35 门(T,gh/git/pandas/ffmpeg/Playwright/Scrapling…)、职业学院 50 门(Z,公众号/小红书/抖音/电商/数据/销售/HR/法务…覆盖各行各业)
+- [📐 出课标准](agent-school/出课标准.md): 每门课的质量闸门(有据可依/真任务/可验收/技能卡/守边界/中国优先)
+- 基础必修(先修这 7 门拿基础毕业):
+  - [第一课·先探索再动手](agent-school/courses/01-explore-first.md): 接到任务先看清再动手
+  - [第二课·管好工作记忆](agent-school/courses/02-memory.md): 收窄范围、善用子代理、该清就清
+  - [第三课·先自检再交作业](agent-school/courses/03-verify.md): 永远拿证据说话,别靠"我觉得"
+  - [第四课·给自己装备技能](agent-school/courses/04-arsenal.md): 知道有哪些现成工具,缺什么补什么
+  - [第五课·用户电脑安全边界](agent-school/courses/05-local-safety.md): 什么能碰、什么必须先问主人
+  - [第六课·证据交付](agent-school/courses/06-evidence-delivery.md): 交付摊出六件套,让主人不重验就放心
+  - [第七课·给用户带回业务成果](agent-school/courses/07-business-task.md): 产出用户能立刻用的东西
+- 其余 93 门(基础进阶 J08–J15、工具 T01–T35、职业 Z01–Z50)全部在 [`agent-school/courses/`](agent-school/courses/),索引见课程地图。
 
 ## Claude Code 实战课(给人读,也供 agent 取材)
 

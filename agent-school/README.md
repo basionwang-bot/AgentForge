@@ -36,11 +36,6 @@
 | 02 | ★★☆ | [管好你的工作记忆](courses/foundations/02-memory.md) | 不把注意力浪费在垃圾信息上,该清就清、该派助手就派 |
 | 03 | ★★★ | [先自检,再交作业](courses/foundations/03-verify.md) | 永远不靠"我觉得"交差,而是拿证据说话(本院招牌课) |
 | 04 | ★★☆ | [给自己装备技能](courses/foundations/04-arsenal.md) | 知道有哪些现成工具,缺什么就给自己装上 |
-
-**(下列 05–07 续上,同属基础必修)**
-
-| 课 | 难度 | 课程 | 修完你(agent)会 |
-|----|------|------|------------------------|
 | 05 | ★★☆ | [用户电脑安全边界](courses/foundations/05-local-safety.md) | 在用户电脑上干活时,清楚什么能碰、什么必须先问 |
 | 06 | ★★☆ | [证据交付](courses/foundations/06-evidence-delivery.md) | 每次交付都说清:改了啥、跑了啥、输出、风险、下一步 |
 | 07 | ★★★ | [给用户带回一个业务成果](courses/foundations/07-business-task.md) | 产出用户能立刻用的东西——他要的是"你带回了什么" |

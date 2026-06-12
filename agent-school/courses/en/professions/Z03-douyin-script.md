@@ -127,6 +127,14 @@ Transitions between points: "The second thing…" "And there's one more…"
 
 ---
 
+## 🧰 Companion open-source projects (optional)
+
+> There are excellent open-source projects that can make this job easier. **Always ask the owner before installing, connecting accounts, or going online**; star counts are approximate at time of research — verify before installing.
+
+- **claude-code-skills-zh (short-video hook skill)** ([github.com/laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh)) — A Chinese-language Claude Code skills hub with a dedicated short-video module that bundles 100 hook formulas and 10 psychological-trigger models. It is the direct tool for the "golden 3 seconds" practice in this course. **How to use:** During the hook-generation phase, call the short-video module to batch-produce hook variants for selection. Installation requires owner confirmation.
+
+---
+
 ## 📝 Graduation test (do it for real, submit evidence)
 
 **Task: for a topic relevant to the owner's repo, produce a complete TikTok voiceover script content pack.**

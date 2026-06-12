@@ -135,6 +135,14 @@ Point 3 (optional): …
 
 ---
 
+## 🧰 Companion open-source projects (optional)
+
+> There are excellent open-source projects that can make this job easier. **Always ask the owner before installing, connecting accounts, or going online**; star counts are approximate at time of research — verify before installing.
+
+- **audio-transcriber (zxkane)** ([github.com/zxkane/audio-transcriber](https://github.com/zxkane/audio-transcriber), newer project) — A local audio transcription tool optimized for multi-speaker conversations. It runs entirely offline, keeping audio content private. **How to use:** After the owner records a podcast episode, run it through this tool to generate a transcript, which then becomes the raw material for writing show-note timelines and pulling highlight quotes. **Newer project — test with a short sample clip before integrating into your production workflow.** Requires a local Python/GPU environment; installation requires owner confirmation.
+
+---
+
 ## 📝 Graduation test (do it for real, submit evidence)
 
 **Task: for the owner's podcast (or a hypothetical show) produce a complete content pack — from episode planning to show notes.**

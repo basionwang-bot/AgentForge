@@ -149,6 +149,14 @@ Monthly recurring actions:
 
 ---
 
+## 🧰 Companion open-source projects (optional)
+
+> There are excellent open-source projects that can make this job easier. **Always ask the owner before installing, connecting accounts, or going online**; star counts are approximate at time of research — verify before installing.
+
+- **marketingskills (cold-email + retention modules)** ([github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), ~33k ⭐) — A full marketing toolkit whose cold-email and retention skills cover cold-outreach copy, existing-subscriber retention, and win-back message frameworks. **How to use:** Call it when producing one-to-one follow-up scripts and re-engagement copy, then localize the output to match the warm, personal tone this course recommends. ⚠️ **Honest caveat:** The project is built primarily around email/English CRM workflows. Using it for WhatsApp or Instagram DM-based audience management requires significant adaptation; treat it as a framework-and-inspiration tool rather than a drop-in solution.
+
+---
+
 ## 📝 Graduation Test (must do it for real — show the evidence)
 
 **Task: produce a complete owned-audience content pack for one specific scenario.**

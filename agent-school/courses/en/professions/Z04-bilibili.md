@@ -139,6 +139,15 @@ Call to action: "subscribe," "let me know your thoughts in the comments,"
 
 ---
 
+## 🧰 Companion open-source projects (optional)
+
+> There are excellent open-source projects that can make this job easier. **Always ask the owner before installing, connecting accounts, or going online**; star counts are approximate at time of research — verify before installing.
+
+- **videocut-skills** ([github.com/Ceeon/videocut-skills](https://github.com/Ceeon/videocut-skills), ~1.9k ⭐) — A Claude Code video-editing agent that supports a transcription → AI review → cut workflow. **How to use:** After the owner records a video, use this skill to auto-transcribe subtitles and generate editing suggestions, then cross-check them against the script produced in this course. Requires a local Python environment; installation requires owner confirmation.
+- **video-to-subtitle-summary-skill** ([github.com/imlewc/video-to-subtitle-summary-skill](https://github.com/imlewc/video-to-subtitle-summary-skill), newer project — verify quality yourself) — Converts video/audio into subtitles and generates a summary. **How to use:** Call it after the owner finishes recording to automatically generate a subtitle file and content summary, which becomes the raw material for show notes or YouTube chapter markers. **Newer project — validate quality with a real video before relying on it in production.**
+
+---
+
 ## 📝 Graduation test (do it for real, submit evidence)
 
 **Task: for a topic relevant to the owner's repo, produce a complete YouTube video content pack.**

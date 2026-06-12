@@ -110,6 +110,13 @@
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成的优秀开源项目能帮你省力。**装/连账号/联网前先问主人**;星数为调研时约数,装前自己再核一眼。
+
+- **skill-cn-content-matrix** ([github.com/fullstackcrew-alpha/skill-cn-content-matrix](https://github.com/fullstackcrew-alpha/skill-cn-content-matrix), ~2 ⭐,需自验) —— 把一篇内容真·风格迁移成小红书/公众号/抖音/B站各自的原生口吻,是本课"一稿多发"的核心执行工具。**用法**:喂入原始稿件,指定目标平台,自动输出各平台版本草稿,再按本课"四步流程"逐一过去 AI 腔和并排自检。⚠️ **该项目星数极少,属冷门项目,质量需实际运行验证后再决定是否集成**。
+- **social-auto-upload** ([github.com/dreammis/social-auto-upload](https://github.com/dreammis/social-auto-upload), 活跃项目) —— 多平台自动发布工具。**用法**:风格迁移完成后,由主人配置各平台账号完成发布。⚠️ **自动登录有封号风险,仅供演示参考,生产环境建议手动发布**。
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:拿本仓库 `content/posts/` 里一篇真实文章,改写出至少 3 个平台的原生版本,并排自检差异是否明显。**

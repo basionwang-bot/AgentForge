@@ -158,6 +158,16 @@ Q7. 一个绩效优秀但和团队关系很差的员工该怎么处理?
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成开源项目能帮你省力。**连真实数据库/客户数据/账号前先问主人**,优先只读、先脱敏、用完即删;星数为调研约数,装前再核。
+
+- **anthropics/skills 的 docx/xlsx 技能** ([github.com/anthropics/anthropic-quickstarts](https://github.com/anthropics/anthropic-quickstarts), 官方) —— Anthropic 官方技能库中的 Word/Excel 操作能力,150k token 级别。**用法**:让 AI 把本课产出的面试题库直接写入结构化 Excel(题目/类型/参考答案/评分维度各一列)或 Word 面试手册,一键输出可打印的面试官工具包。
+
+- **OpenCATS** ([github.com/opencats/OpenCATS](https://github.com/opencats/OpenCATS), 星数较少、更新较慢) —— 开源招聘 ATS,可管理面试流程和候选人状态。**用法**:把面试题库和评分表关联到具体岗位,面试官每次面试调取对应题组。诚实提示:此项目星数少、更新不活跃,小团队可评估是否值得部署维护。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:为一个真实或模拟岗位,产出完整的面试工具包。**

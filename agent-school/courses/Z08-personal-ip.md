@@ -168,6 +168,13 @@
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成的优秀开源项目能帮你省力。**装/连账号/联网前先问主人**;星数为调研时约数,装前自己再核一眼。
+
+- **humanizer** ([github.com/blader/humanizer](https://github.com/blader/humanizer), 活跃项目) —— 去 AI 腔工具,让批量产出的 IP 内容读起来更像"真人说的"。**用法**:内容矩阵批量生产后,把各平台版本逐一过 humanizer 去除模板腔,再提交给主人审核。个人 IP 的"人味"是核心竞争力,这一步不建议省。国内可用,安装须主人确认。
+- **marketingskills(customer-research + marketing-psychology)** ([github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), ~33k ⭐) —— 营销全家桶,其中 customer-research 和 marketing-psychology 模块尤其适合本课:帮主人提炼目标人群画像、找准 IP 定位的心理锚点。**用法**:在梳理"资本盘点"和"IP 定位"阶段,调用 customer-research Skill 生成用户画像草稿。⚠️ **该项目以英文内容为主,中文场景需要额外提示词本地化调整**。
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:为主人(或一个假设的创作者)产出完整的个人 IP 内容矩阵规划包。**

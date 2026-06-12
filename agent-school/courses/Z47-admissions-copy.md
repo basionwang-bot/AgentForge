@@ -156,6 +156,17 @@
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 现成开源项目能帮上忙,但**装/连账号/联网前先问主人**。星数为调研约数。
+
+- **fullstackcrew-alpha/skill-cn-content-matrix** ([github.com/fullstackcrew-alpha/skill-cn-content-matrix](https://github.com/fullstackcrew-alpha/skill-cn-content-matrix), ~200★) —— 原生中文多平台内容矩阵技能,可将同一份招生文案一键改写成朋友圈/公众号/小红书/海报多种口吻。**用法**:将本课产出的文案草稿作为输入,调用该技能生成各平台适配版本;发布前仍须按本课"合规红线"自检,招生内容**不得承诺升学/加分/效果保证**,优惠须真实。国内可直接安装使用。
+- **laolaoshiren/claude-code-skills-zh** ([github.com/laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh), ~150★) —— 中文场景技能选材库,含多个内容创作技能示例。**用法**:参考其技能选材思路,扩充招生文案场景的覆盖面(如家长群话术、短视频脚本等)。
+
+> ⚠️ 教育培训广告高压区提醒:使用上述工具生成文案后,产出内容须经本课核心原则第 6 条合规红线逐项过滤再交主人。工具不会自动过滤广告法禁用词。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:以「布尔熊编程」为真实品牌,针对寒假/暑假招生季,产出完整招生文案内容包。**

@@ -134,6 +134,13 @@ B 站封面是横屏图(16:9),常见做法:
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成的优秀开源项目能帮你省力。**装/连账号/联网前先问主人**;星数为调研时约数,装前自己再核一眼。
+
+- **videocut-skills** ([github.com/Ceeon/videocut-skills](https://github.com/Ceeon/videocut-skills), ~1.9k ⭐) —— Claude Code 视频剪辑代理,支持转写→AI 审片→剪辑流程。**用法**:主人录完视频后,用该 Skill 自动转写字幕、生成剪辑建议,与本课产出的脚本对照校对。国内可用,需本地 Python 环境,安装须主人确认。
+- **video-to-subtitle-summary-skill** ([github.com/imlewc/video-to-subtitle-summary-skill](https://github.com/imlewc/video-to-subtitle-summary-skill), 新项目,需自验) —— 把视频/音频转成字幕并生成摘要。**用法**:主人录制完视频后调用,自动生成字幕文件和内容摘要,作为 shownotes 或 B 站章节标注的原料。**较新项目,质量需实际验证**。
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:为主人仓库的某个主题,产出完整的 B 站视频内容包。**

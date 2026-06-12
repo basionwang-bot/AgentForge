@@ -206,6 +206,12 @@ print(by_cat.head(10))
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成的优秀开源项目能帮你省力。**装/连账号/联网前先问主人**;星数为调研时约数,装前自己再核一眼。
+
+- **marketingskills(customer-research 模块)** ([github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), ~33k ⭐) —— 营销全家桶中的 customer-research Skill,涵盖人群细分框架、用户画像生成、需求洞察提炼。**用法**:在完成 RFM 分层后,调用 customer-research Skill 辅助为每个分群撰写"人群画像描述"和"运营动作建议"文字,让数据分析报告更易读懂。⚠️ **该项目以英文定性研究场景为主,适合补充文字描述部分;RFM 计算本身仍需本课提供的 pandas 脚本来完成**。
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:对主人提供的订单/客户数据,完成人群分层 + 选品分析,产出可直接给主人看的分析报告。**

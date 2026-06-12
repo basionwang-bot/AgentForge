@@ -229,6 +229,16 @@ JD 是招聘的"广告"。一份差的 JD 长这样:要求熟练掌握 XX 技能
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成开源项目能帮你省力。**连真实数据库/客户数据/账号前先问主人**,优先只读、先脱敏、用完即删;星数为调研约数,装前再核。
+
+- **anthropics/skills 的 docx 技能** ([github.com/anthropics/anthropic-quickstarts](https://github.com/anthropics/anthropic-quickstarts), 官方) —— Anthropic 官方技能库中的 Word/docx 操作能力,150k token 级别,出结构化 JD 文档的利器。**用法**:让 AI 把本课产出的 JD 草稿直接写入规范 Word 模板,附上岗位编号、审批意见栏,交给 HR 直接发布或存档。
+
+- **OpenCATS** ([github.com/opencats/OpenCATS](https://github.com/opencats/OpenCATS), 星数较少、更新较慢) —— 开源招聘 ATS(申请人跟踪系统),可管理岗位发布和候选人流程。**用法**:把 JD 录入 OpenCATS 统一管理多个岗位的发布状态和候选人进度。诚实提示:此项目星数少、更新不活跃,装前评估团队是否有维护能力;对于小团队可优先考虑飞书招聘等国内 SaaS。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:针对以下岗位需求,写出一份适合在 BOSS 直聘/拉勾发布的完整 JD 草稿。**

@@ -207,6 +207,16 @@ print(summary)
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成开源项目能帮你省力。**连真实数据库/客户数据/账号前先问主人**,优先只读、先脱敏、用完即删;星数为调研约数,装前再核。
+
+- **Metabase** ([github.com/metabase/metabase](https://github.com/metabase/metabase), ~40k★) —— 零 SQL 可视化看板,可直连 MySQL/PostgreSQL/CSV,拖拖拽拽就能出图表。**用法**:把本课的 Python 看板原型升级成 Metabase 自动刷新仪表盘,主人每天打开浏览器就能看最新数据。自托管,国内服务器可直接部署。
+
+- **Apache Superset** ([github.com/apache/superset](https://github.com/apache/superset), ~63k★) —— 更强大的企业级 BI 工具,支持更多图表类型和数据源。**用法**:当业务指标复杂、看板需要多维钻取时,用 Superset 替代 Python 手绘图,支持 SQL 自定义。需要一定运维能力,适合已有数据团队的场景。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:用上方模拟数据(或主人提供的真实数据)生成完整业务看板,产出图表文件 + 可直接给主人看的看板报告。**

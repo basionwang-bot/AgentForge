@@ -242,6 +242,18 @@ batch_generate(["2024-W10", "2024-W11", "2024-W12", "2024-W13"])
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成开源项目能帮你省力。**连真实数据库/客户数据/账号前先问主人**,优先只读、先脱敏、用完即删;星数为调研约数,装前再核。
+
+- **Metabase** ([github.com/metabase/metabase](https://github.com/metabase/metabase), ~40k★) —— 零 SQL KPI 看板,配置一次,数据自动刷新,告别每周手工出报表。**用法**:把本课的 KPI 报表模板在 Metabase 里配成定时推送看板,主人每周一早上自动收到上周完成情况。自托管,中国可直接部署。
+
+- **Apache Superset** ([github.com/apache/superset](https://github.com/apache/superset), ~63k★) —— 企业级 BI,支持多维 KPI 钻取和自定义 SQL 指标。**用法**:当 KPI 指标体系复杂(分部门/分渠道/分产品多层汇总)时,用 Superset 替代手写 Python,支持交互式筛选。
+
+- **anthropics/skills 的 docx/pptx 技能** ([github.com/anthropics/anthropic-quickstarts](https://github.com/anthropics/anthropic-quickstarts), 官方) —— Anthropic 官方技能库中的 Word/PPT 操作能力,150k token 级别,出 KPI 汇报文档/幻灯片的利器。**用法**:让 AI 把 KPI 分析结果直接写入规范 Word 模板或 PPT,交给主人直接汇报用。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:用上方模拟数据跑通完整的 KPI 报表自动化流程,并向主人演示"新数据进来、报告自动出来"的全过程。**

@@ -139,6 +139,12 @@ We ship directly from our factory. Link below."
 
 ---
 
+## 🧰 配套开源项目（可选集成）
+
+> 这门课的活,也有现成的优秀开源项目能帮你省力。**装/连账号/联网前先问主人**;星数为调研时约数,装前自己再核一眼。
+
+- **Amazon-Skills** ([github.com/nexscope-ai/Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills), ~252 ⭐) —— 跨境 Listing 生产技能,覆盖亚马逊标题优化、五点卖点、关键词研究,支持美国/英国/德国/日本等多个站点。**用法**:在产出 Listing 标题和五点卖点阶段调用,生成初稿后按本课"中英双语对照+本地化自检"流程精修。⚠️ **该项目不含中国站,且以英文市场为主,与国内卖家跨境出海场景吻合度高;TikTok Shop 跨境部分该项目暂无覆盖,需自建提示词**。需要访问 GitHub 和相关海外 API,使用前确认网络环境。
+
 ## 📝 毕业测验（必须真做，交证据）
 
 **任务：为一款国产商品，产出完整的跨境 Listing 内容包。**

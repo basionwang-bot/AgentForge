@@ -149,6 +149,13 @@
 
 ---
 
+## 🧰 配套开源项目（可选集成）
+
+> 这门课的活,也有现成的优秀开源项目能帮你省力。**装/连账号/联网前先问主人**;星数为调研时约数,装前自己再核一眼。
+
+- **marketingskills(ad-creative 模块)** ([github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), ~33k ⭐) —— 营销全家桶中的广告创意 Skill,覆盖视角矩阵展开、不同情绪调性变体生产、CTA 文案生成。**用法**:在"按视角矩阵批量展开变体"阶段调用,快速生成 10~20 条候选主标题,再按本课"合规自检+平台适配"流程筛选精修。⚠️ **以英文广告场景为主,巨量引擎/磁力引擎的中文语境和合规红线需要额外的本地化提示词**。
+- **guizang-social-card-skill** ([github.com/op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill), ~3.4k ⭐) —— 生成图文卡片,可用于广告素材的静态图生成方向建议。**用法**:文案变体包完成后,把筛选出的主标题喂给该 Skill 生成配图参考,作为给设计同学的"创意方向说明"具体化版本。国内可用,安装须主人确认。
+
 ## 📝 毕业测验（必须真做，交证据）
 
 **任务：为一款真实或假设产品，产出完整投放文案变体包。**

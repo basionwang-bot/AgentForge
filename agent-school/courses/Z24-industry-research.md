@@ -272,6 +272,16 @@ for r in repos:
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成开源项目能帮你省力。**连真实数据库/客户数据/账号前先问主人**,优先只读、先脱敏、用完即删;星数为调研约数,装前再核。
+
+- **Crawl4AI** ([github.com/unclecode/crawl4ai](https://github.com/unclecode/crawl4ai), ~68k★) —— 本地爬虫,把网页内容直接输出成 Markdown 喂给 AI 分析。**用法**:批量抓取行业报告摘要页、协会公告、上市公司投资者关系页,把内容交给 AI 提炼行业数据。尊重 robots.txt,频率要低;国内直接可用。
+
+- **OpenRefine** ([github.com/OpenRefine/OpenRefine](https://github.com/OpenRefine/OpenRefine), ~11k★) —— 可视化数据清洗工具,擅长处理从多来源拼凑来的脏数据(格式不一、重复、乱码)。**用法**:把从多个渠道收集的行业数据表(市场规模、竞争者列表等)导入 OpenRefine 统一清洗、去重、标准化后再分析。本地运行,无数据上云风险。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:对"国内 AI Coding 工具"赛道做一份有数据支撑的行业研究报告。**

@@ -210,6 +210,16 @@ print("趋势图已保存到 /tmp/sales_trend.png")
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成开源项目能帮你省力。**连真实数据库/客户数据/账号前先问主人**,优先只读、先脱敏、用完即删;星数为调研约数,装前再核。
+
+- **Metabase** ([github.com/metabase/metabase](https://github.com/metabase/metabase), ~40k★) —— 零 SQL 销售看板,可直连数据库自动刷新销售数据。**用法**:把本课产出的月度销售分析报告升级成 Metabase 实时看板,销售经理每天自助查看各渠道/产品/销售员的完成率,不用每次找 AI 重跑。自托管,中国服务器可直接部署。
+
+- **anthropics/skills 的 xlsx 技能** ([github.com/anthropics/anthropic-quickstarts](https://github.com/anthropics/anthropic-quickstarts), 官方) —— Anthropic 官方技能库中的 Excel/xlsx 操作能力,支持读写 150k token 级别的大表格,出报表/汇总表的利器。**用法**:让 AI 直接读取主人提供的销售 Excel 原文件,输出分析结果并写回格式化报告,省去手动导入导出。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:用模拟数据(或主人提供的真实销售数据)产出一份完整月度销售分析报告。**

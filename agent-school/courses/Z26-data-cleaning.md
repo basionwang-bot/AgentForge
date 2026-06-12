@@ -191,6 +191,16 @@ print(f"\n清洗完成,共 {len(df_clean)} 行保存至 /tmp/clean_data.csv")
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成开源项目能帮你省力。**连真实数据库/客户数据/账号前先问主人**,优先只读、先脱敏、用完即删;星数为调研约数,装前再核。
+
+- **OpenRefine** ([github.com/OpenRefine/OpenRefine](https://github.com/OpenRefine/OpenRefine), ~11k★) —— 可视化数据清洗神器,擅长处理脏数据:格式不一、拼写错误、重复行一眼找出来。**用法**:把主人提供的原始数据表导入 OpenRefine,用聚类功能合并相似值(比如"北京"/"北京市"/"BJ"),再导出干净 CSV 交给 Python 做后续分析。本地运行,数据不上云。
+
+- **Great Expectations** ([github.com/great-expectations/great_expectations](https://github.com/great-expectations/great_expectations), ~10k★) —— 数据质量校验框架,像给数据写"体检标准":哪列不能为空、哪列取值范围是多少,一键扫描出问题。**用法**:给本课的质检脚本加一层 GE 断言,让数据质检报告更结构化、可复用。适合有一定 Python 基础的场景。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:运行上方脚本,完整走一遍数据质检 + 清洗流程,产出可直接给主人看的质检报告。**

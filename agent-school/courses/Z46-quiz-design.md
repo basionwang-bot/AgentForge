@@ -101,6 +101,15 @@
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 现成开源项目能帮上忙,但**装/连账号/联网前先问主人**。星数为调研约数。
+
+- **ECuiDev/obsidian-quiz-generator** ([github.com/ECuiDev/obsidian-quiz-generator](https://github.com/ECuiDev/obsidian-quiz-generator), ~1.2k★) —— Obsidian 插件,支持 7 种题型(单选/多选/判断/填空/简答等),可对接本地 Ollama 模型离线运行,多语言支持。**用法**:把本课产出的知识点提纲粘贴进 Obsidian 笔记,用插件批量生成题目初稿再人工修改;**诚实提示:该插件近一年更新频率偏低,部分功能稳定性待验证**——建议走 Ollama + 国产中文模型(如 Qwen)跑本地推理,避免联网调用 OpenAI。国内可直接用,无翻墙需求。
+- **raine/anki-llm(备选)** ([github.com/search?q=anki+llm](https://github.com/search?q=anki+llm), 多个同类项目) —— 将题目批量导出为 Anki 闪卡格式,适合布卢姆"记忆层"的反复练习场景。**用法**:将本课题组中的基础题(记忆/理解层)导出为 Anki 卡片,供学生课后自测;Anki 本体完全免费且国内可用。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:为一个指定的课程单元设计完整题组 + 评分量规。**

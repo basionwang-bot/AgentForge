@@ -110,6 +110,16 @@
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 现成开源项目能帮上忙,但**装/连账号/联网前先问主人**。星数为调研约数。
+> ⚖️【法务课专属】下列法务项目多为**美国法/GDPR 训练**,**只能借它的检查框架/流程/报告结构,不能借具体法律结论**;一切产出均为草稿、**不构成法律意见,须执业律师终审**。
+
+- **nisrulz/app-privacy-policy-generator** ([github.com/nisrulz/app-privacy-policy-generator](https://github.com/nisrulz/app-privacy-policy-generator), ~3k★) —— 离线静态工具,基于 GDPR 和"无追踪"原则生成隐私政策模板。**用法**:把生成结果当作**章节结构和条款 checklist 的参照**,逐项核查本课第三步"高风险条款检查清单"是否覆盖;**GDPR ≠ 《个人信息保护法》**,条款措辞、用户权利行使路径、跨境传输合规依据须全部按中国《个保法》重写。工具完全本地离线,不上传任何数据,安全可用。
+- **anthropics/claude-for-legal** ([github.com/anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal), ~8.2k★) —— `privacy-legal` 分支提供隐私政策结构化分析和缺项检测工作流。**用法**:借用其"敏感数据条款+第三方共享+用户权利"三维检查框架;法规引用须替换为《个保法》《数据安全法》等中国法律,境外条款不可直用。
+
+---
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:为一个真实或模拟产品起草隐私政策草稿。**

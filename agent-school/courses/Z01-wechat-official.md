@@ -67,6 +67,13 @@
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成的优秀开源项目能帮你省力。**装/连账号/联网前先问主人**;星数为调研时约数,装前自己再核一眼。
+
+- **wewrite** ([github.com/oaker-io/wewrite](https://github.com/oaker-io/wewrite), ~2.3k ⭐) —— 公众号全流程 AI 技能:热点抓取→选题→写作→SEO→配图→排版→推送微信草稿箱,一条龙。**用法**:写好正文后调用 wewrite 完成排版并推入草稿箱,主人在公众号后台确认发布。国内可直接访问,需绑定微信公众号账号,**操作前必须经主人授权**。
+- **md2wechat-skill** ([github.com/geekjourneyx/md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill), ~数百 ⭐) —— 把 Markdown 一键转成公众号排版,支持 40+ 样式主题、AI 配图、批量发布,免费档够用。**用法**:将本课产出的正文草稿(标准 Markdown)喂给该 Skill,生成带排版的公众号格式内容包。国内可用,安装须主人点头。
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:挑一个真实主题,产出完整的公众号内容包。**

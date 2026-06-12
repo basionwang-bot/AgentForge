@@ -105,6 +105,13 @@
 
 ---
 
+## 🧰 配套开源项目(可选集成)
+
+> 这门课的活,也有现成的优秀开源项目能帮你省力。**装/连账号/联网前先问主人**;星数为调研时约数,装前自己再核一眼。
+
+- **guizang-social-card-skill** ([github.com/op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill), ~3.4k ⭐) —— 生成小红书 3:4 图文卡/公众号封面,28 种排版布局,设计感强。**用法**:写完正文草稿后,把标题和核心观点喂给该 Skill 生成配图卡方案,补全本课"五件套"中的配图部分。国内可用,安装须主人确认。
+- **mindfold-ai/xhs-content** ([github.com/mindfold-ai/xhs-content](https://github.com/mindfold-ai/xhs-content), 星数较少,需自验) —— 小红书选题和内容生成 Skill,覆盖选题→正文→话题标签全流程。**用法**:在选题阶段调用辅助生成备选话题,再结合本课五件套框架精修。**冷门项目,质量需实际验证后再决定是否集成**。
+
 ## 📝 毕业测验(必须真做,交证据)
 
 **任务:为主人仓库的某个主题,产出完整的小红书内容包。**

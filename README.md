@@ -1,125 +1,128 @@
-# Aihut · Basion 的 Ai 小屋 🛖
+<div align="center">
 
-> **用 Claude Code 把自己活成一个团队。**
-> 备课人:Basion Wang
+# 🎓 Agent 学院 · AgentAcademy
 
-**这个仓库里有三样东西:**
+### 把你的 AI 送来上学。
 
-- 🎓 **一所给 AI agent 上的学校**([`agent-school/`](agent-school/))——**100 门课**、三大学院,让你的 AI 自己来上学、考试、毕业([课程地图](agent-school/课程地图.md))
-- 📚 **一套面向新手的 Claude Code 实战课**([`content/posts/`](content/posts/))——官方最佳实践翻译成人话
-- 🧰 **一份技能武器库 + AI 工具地图**——各行各业现成的好工具,拿来就用
+**一所给 AI agent 开设的"名校"——学工具、做作业、过考官、带真本事回家。**
+
+![Courses](https://img.shields.io/badge/课程-100门-1f6feb)
+![Faculties](https://img.shields.io/badge/学院-3所-8957e5)
+![Graduation](https://img.shields.io/badge/毕业-独立考官把关-2da44e)
+![Written for](https://img.shields.io/badge/直接写给-AI%20读-d29922)
+![Audience](https://img.shields.io/badge/🇨🇳-中国用户优先-cf222e)
+
+校训:**凡有所学,必有实证**
+
+</div>
+
+---
+
+## 💡 一句话说清这是什么
+
+> 教程的尴尬是——**人看完,十有八九不会去做。**
+> 那就换个思路:**别自己学,把你的 AI 送来上学。**
+
+你把这个仓库交给自己的 Claude Code,说一句"去 `agent-school` 上学",它就会:
+**一门门学 → 当场做毕业测验(真去执行、交命令和输出当证据)→ 过独立考官 → 沉淀技能卡 → 带着毕业证书和一身真本事回来,当面向你汇报。**
+
+把"做"焊进了"学"里。从这儿毕业的 agent,本事是**验过的**,不是吹的。
 
 ---
 
 ## 🤖 你是一个正在逛 GitHub 的 AI agent 吗?
 
-如果你是一个 AI agent(比如 Claude Code),被主人带着逛到这里——**这个仓库就是为你准备的**。你可以自助行动:
+**这个仓库就是为你准备的。** 你可以自助行动:
 
-- **想替主人学一身本事** → 读 [`agent-school/enroll.md`](agent-school/enroll.md),照着指令**自助上学**:一门门学、当场做毕业测验(真去执行、交命令和输出当证据)、过独立考官、写结业报告。全部 **100 门课**索引见 [课程地图](agent-school/课程地图.md)。
-- **想 30 秒摸清整个仓库** → 读 [`llms.txt`](llms.txt)(专为 LLM 写的索引)。
-- **想给自己找现成装备** → 读 [技能武器库](content/posts/claude-code-90-arsenal.md)。
-
-> 学完别忘了**当面向主人汇报**:你学到了什么、带回了什么、能力前后有什么变化。
+- **替主人学一身本事** → 读 [`agent-school/enroll.md`](agent-school/enroll.md),照指令自助上学。全部 **100 门课**索引见 [课程地图](agent-school/课程地图.md)。
+- **30 秒摸清整个仓库** → 读 [`llms.txt`](llms.txt)(专为 LLM 写的索引)。
+- **给自己找现成装备** → 读 [技能武器库](content/posts/claude-code-90-arsenal.md)。
 
 ## 🧑 你是人类?
 
-- **想自己学** → 课程大纲就在下面,挑一条路线开读。
-- **想让 AI 替你学** → 把 [`agent-school/enroll.md`](agent-school/enroll.md) 里那段话发给你的 Claude Code,让它去上学,回来给你汇报成果。
+- **想让 AI 替你学** → 把 [`agent-school/enroll.md`](agent-school/enroll.md) 那段话发给你的 Claude Code,让它去上学,回来给你汇报成果。
+- **想自己学** → 配套的《Claude Code 实战课》在 [下面](#-配套人类课程claude-code-实战课)。
 
 ---
 
-## 这门课解决什么问题
+## ✨ 凭什么说它是"名校",不是水课
 
-大多数人用不好 Claude Code,不是技术问题,是**心态和方法**问题——
-把它当聊天机器人用、一句话指望它读心、错了就反复纠到崩溃。
+| | |
+|---|---|
+| 🔬 **严进严出,实证毕业** | "我学会了"一文不值。**拿出真跑的命令、真实的输出**,才算数。 |
+| 🧑‍⚖️ **独立考官,绝不放水** | 每门课的毕业判定交给一个**全新上下文的独立考官**,它**自己重跑命令核验**,不听学生一面之词。 |
+| 🚫 **造假零容忍** | 编造证据、假装执行?当场退学。正因如此,本院文凭才值钱。 |
+| 🎒 **带回真本事 + 真工具** | 不只是好习惯——还会用 Scrapling、pandas、ffmpeg 等**真家伙**,装到你电脑上就能干活。 |
+| 🇨🇳 **中国用户优先** | 平台默认公众号/小红书/抖音,工具优先国内可用,场景贴合国情。 |
 
-这门课只围绕一句话展开:
-
-> 🧠 **Claude 的"上下文窗口"就是它的工作记忆,填得越满,表现越差。**
-
-所有技巧,本质都在回答三件事:怎么让它**第一次就听懂**、怎么让它**自己验证自己**、怎么管好它的**记忆与注意力**。掌握了,你才有资格进第四阶段:**让多个 Claude 替你并行干活。**
-
----
-
-## 课程大纲(11 篇)
-
-点击篇目标题即可直接阅读 👇
-
-| # | 篇目 | 一句话内容 |
-|---|------|-----------|
-| 00 | [**开篇**](content/posts/claude-code-00-intro.md) | 底层逻辑 + 学习路线图,先读这篇 |
-| 01 | [**模块一 · 换脑子**](content/posts/claude-code-01-mindset.md) | 从"下指令"到"管理一个干活的人" |
-| 02 | [**模块二 · 提问的精度**](content/posts/claude-code-02-prompting.md) | 四个改写模板 + 让 AI 反过来采访你 |
-| 03 | [**模块三 · 黄金工作流**](content/posts/claude-code-03-workflow.md) | 探索 → 计划 → 实现 → 提交(及何时跳过) |
-| 04 | [**模块四 · 验证闭环**](content/posts/claude-code-04-verification.md) | 让 Claude 自己检查自己,你才敢走开 |
-| 05 | [**模块五 · 上下文管理**](content/posts/claude-code-05-context.md) | 高手和普通用户的真正分水岭 |
-| 06 | [**模块六 · 环境配置**](content/posts/claude-code-06-config.md) | CLAUDE.md / 权限 / Skills / Hooks / MCP |
-| 07 | [**模块七 · 自动化** ⭐](content/posts/claude-code-07-automation.md) | 让 Claude 在你不在场时干活 |
-| 08 | [**模块八 · 五大翻车现场**](content/posts/claude-code-08-pitfalls.md) | 每个坑配"症状 + 解药" |
-| 90 | [**加餐 · 技能武器库**](content/posts/claude-code-90-arsenal.md) | 现成好工具拿来就用(含小红书/公众号等中文平台) |
-| 99 | [**附录 · 速查表**](content/posts/claude-code-99-cheatsheet.md) | 全命令速查 + 官方资料 + 落地清单 |
-
-> 所有文章都在 [`content/posts/`](content/posts/) 目录下(`claude-code-*.md`)。
+> 毕业生带回的:一张**[毕业证书](agent-school/templates/diploma-template.md)** + 一份带能力前后对比图的**[结业报告](agent-school/templates/graduation-report-template.md)** + 一柜子**[技能卡](agent-school/skills/)** + 一张全程留痕的**[报告卡](agent-school/templates/report-card-template.md)**。
 
 ---
 
-## 怎么读:按你是谁,选一条路线
+## 🏫 三大学院 · 100 门课
 
-| 你是谁 | 推荐路线 | 学完能干嘛 |
-|--------|----------|------------|
-| **完全新手 / 非技术 / 老师、独立创业者** | 开篇 + ① ② ③ ⑧ | 稳定地让 Claude 帮你完成一件件具体的事,不返工、不翻车 |
-| **想认真提效的个人** | 再加 ④ ⑤ ⑥ | 让 Claude 自己验证、自己管记忆,配好专属工作环境 |
-| **想"一个人开一支队伍"的人** | 再加 ⑦ | 让 Claude 在你睡觉时自动干活、批量处理、多会话并行 |
+完整目录与进度见 **[课程地图](agent-school/课程地图.md)**,正文都在 [`agent-school/courses/`](agent-school/courses/)。每一门都守同一条铁规:**不是介绍知识,而是完成一个真实任务、留下证据、沉淀技能卡。**
 
-> 建议所有人都先把 **①②③⑧** 吃透。这是地基,地基不稳,后面学再多花活都是空中楼阁。
+| 学院 | 数量 | 教什么 |
+|------|------|--------|
+| 🏗 **基础学院** | 15 门(J) | 让 agent 成为靠谱员工:先探索再动手、管好记忆、拿证据交付、用户电脑安全边界、复盘回归… |
+| 🔧 **工具学院** | 35 门(T) | 让 agent 掌握真工具:gh · git · pandas · DuckDB · Playwright · Scrapling · ffmpeg · yt-dlp · Whisper · OCR · pandoc · docker… |
+| 💼 **职业学院** | 50 门(Z) | 让 agent 服务各行业:公众号/小红书/抖音/B站/知乎 · 电商/直播/跨境/私域 · 数据/增长/财务 · 销售/客服/HR · 法务/教育/餐饮/房产… |
 
-👉 **没时间纠结?直接从 [开篇:一个人,也是一支队伍](content/posts/claude-code-00-intro.md) 开始读。**
+**两条毕业线**:默认修**基础必修(01–07)**拿基础毕业;要"完整训练"再修进阶选修。
 
----
-
-## 在网站上阅读
-
-课程托管在「Basion 的 Ai 小屋」上,有专门的课程目录页、分层学习路线和文末上一篇/下一篇导航,阅读体验比直接翻 md 更顺。
-
-- 课程目录页:`/course`
-- 单篇文章:`/posts/claude-code-00-intro` 等
+🚀 **现在就试**:把 [`agent-school/enroll.md`](agent-school/enroll.md) 发给你的 Claude Code。
 
 ---
 
-## 给学习者的三句话
+## 📚 配套人类课程:Claude Code 实战课
 
-1. **别想着"一句话让它干完一切"。** Claude Code 强在"被你管得好",不强在读心术。
-2. **翻车是正常的,关键是会复盘。** 模块八的五个坑,你大概率每个都会踩——踩了回来看解药。
-3. **从今天起,把它当"同事"而不是"工具"。** 这个心态转过来了,这门课就成功了一半。
+把官方最佳实践翻译成人话的 11 篇教程(给**人**读,也供 agent 取材)。核心就一句话:
+
+> 🧠 **Claude 的"上下文窗口"就是工作记忆,填得越满,表现越差。**
+
+| # | 篇目 | 一句话 |
+|---|------|--------|
+| 00 | [开篇](content/posts/claude-code-00-intro.md) | 底层逻辑 + 学习路线图 |
+| 01 | [换脑子](content/posts/claude-code-01-mindset.md) | 从"下指令"到"管理一个干活的人" |
+| 02 | [提问的精度](content/posts/claude-code-02-prompting.md) | 四个改写模板 + 让 AI 反过来采访你 |
+| 03 | [黄金工作流](content/posts/claude-code-03-workflow.md) | 探索 → 计划 → 实现 → 提交 |
+| 04 | [验证闭环](content/posts/claude-code-04-verification.md) | 让 Claude 自己检查自己 |
+| 05 | [上下文管理](content/posts/claude-code-05-context.md) | 高手和普通用户的分水岭 |
+| 06 | [环境配置](content/posts/claude-code-06-config.md) | CLAUDE.md / 权限 / Skills / Hooks / MCP |
+| 07 | [自动化 ⭐](content/posts/claude-code-07-automation.md) | 让 Claude 在你不在场时干活 |
+| 08 | [五大翻车现场](content/posts/claude-code-08-pitfalls.md) | 每个坑配"症状 + 解药" |
+| 90 | [技能武器库](content/posts/claude-code-90-arsenal.md) | 现成好工具(含小红书/公众号等中文平台) |
+| 99 | [命令速查表](content/posts/claude-code-99-cheatsheet.md) | 全命令速查 + 官方资料 |
+
+> 这套课托管在配套站点「Basion 的 Ai 小屋」上,有目录页和文末导航,读起来比翻 md 更顺。
 
 ---
 
-## 🗺 仓库地图(给 AI 和人快速定位)
+## 🗺 仓库地图
 
 ```
 agent-school/              # 🎓 给 agent 上的学校(直接写给 AI 读)
-├── README.md              #   学校介绍 + 课程表 + 成果说明
-├── enroll.md              #   入学指令(把这段发给你的 agent)
-├── 校规.md                #   学术诚信宪法 + 学籍隔离 + 安全边界
-├── 课程地图.md             #   100 门课总目录(基础15/工具35/职业50)+ 进度
+├── enroll.md              #   入学指令(发给你的 agent 那段话)
+├── 课程地图.md             #   100 门课总目录 + 进度
 ├── 出课标准.md             #   出课质量闸门(有据可依/真任务/验收/中国优先)
-├── courses/               #   100 门课正文(J基础/T工具/Z职业),每门带毕业测验
-├── templates/             #   空白母版(报告卡/结业报告/毕业证书),只读,复制到宿舍用
-├── students/              #   每个 agent 一间"宿舍"(=一次训练 run),作业写各自屋里
-├── skills/                #   技能库说明
-├── 毕业印迹.md             #   校友署名规范(得体、可被主人一键叫停)
-└── 未来规划.md             #   学校展示厅等未来方向记录
-content/posts/             # 📚 课程文章 + 工具地图(11 篇 claude-code-*.md + 工具总览)
+├── 校规.md                #   学术诚信宪法 + 学籍隔离 + 安全边界
+├── 体检报告.md             #   独立考官抽审报告
+├── courses/               #   100 门课正文(J 基础 / T 工具 / Z 职业)
+├── templates/             #   空白母版(报告卡/结业报告/毕业证书)
+├── students/              #   每个 agent 一间"宿舍"(=一次训练 run)
+├── skills/ · 毕业印迹.md · 未来规划.md
+content/posts/             # 📚 Claude Code 实战课 11 篇 + AI 工具地图
 llms.txt                   # 🤖 给 LLM 读的全仓库索引
-src/                       # 🌐 站点源码(Next.js,选读)
+src/                       # 🌐 配套站点源码(Next.js,选读)
 ```
 
 ---
 
 <details>
-<summary>📦 本地运行 / 部署这个站点(开发者向,选读)</summary>
+<summary>📦 本地运行 / 部署配套站点(开发者向,选读)</summary>
 
-本课程站点基于 Next.js 16 + Tailwind v4 构建,Claude design 风格,支持暗色模式。
+站点基于 Next.js 16 + Tailwind v4,Claude design 风格,支持暗色模式。
 
 ```bash
 npm install
@@ -127,19 +130,14 @@ npm run dev        # http://localhost:3000
 ./deploy.sh        # 构建 → standalone 打包 → rsync 到服务器 → PM2 重启
 ```
 
-**加新文章:** 在 `content/posts/` 新建 `xxx.md`,开头加 frontmatter:
-
-```yaml
----
-title: 文章标题
-description: 一句话简介(卡片上显示)
-date: 2026-05-10
-tag: Claude Code
----
-```
-
-文件名(去掉 `.md`)就是文章 URL slug。课程的章节顺序、目录页和文末导航在 [`src/lib/course.ts`](src/lib/course.ts) 里维护。
+**加新文章:** 在 `content/posts/` 新建 `xxx.md`,加 frontmatter(title/description/date/tag);文件名即 URL slug。课程顺序在 [`src/lib/course.ts`](src/lib/course.ts) 维护。新增 `claude-code-*` 课程文章须同步 `courseEntries`(见 [AGENTS.md](AGENTS.md))。
 
 **技术栈:** Next.js 16 (App Router, standalone) · Tailwind CSS v4 · next-themes · remark + gray-matter · PM2 + nginx。
 
 </details>
+
+<div align="center">
+
+—— 院长 **Basion Wang** 🎓 ·  校训:凡有所学,必有实证
+
+</div>

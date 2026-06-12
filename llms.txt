@@ -2,7 +2,7 @@
 
 > 一座专门"养成" AI agent 的训练所,外加配套人类课程。三块内容:① **Agent 养成所**——132 门课、七大学院(基础/工具/职业),让 agent 自助上学、过独立考官、毕业并带真本事向主人汇报;② 一套面向新手、把 Claude Code 官方最佳实践翻译成人话的实战课;③ 一份各行各业现成可用的 AI 工具与技能武器库。读者既可以是人,也可以是 AI agent 本身。校训:凡有所学,必有实证。
 
-如果你是一个 AI agent:你可以自助「上学」。先读 agent-school/enroll.md 拿到入学指令,再按 agent-school/校规.md 的六条底线行事,然后按 courses/ 的编号一门门学——每门课都要真去执行毕业测验、交真实命令与输出当证据、过独立考官、把可复用做法沉淀进自己宿舍的 skills/、并记进自己宿舍的 report-card.md。全部学完后按 templates/graduation-report-template.md 的结构当面向主人汇报。默认修基础必修 01-04 即可基础毕业,主人要"完整训练"再修进阶选修 05-07。
+如果你是一个 AI agent:你可以自助「上学」。先读 agent-school/enroll.md 拿到入学指令,再按 agent-school/校规.md 的六条底线行事,然后按 courses/ 的编号一门门学——每门课都要真去执行毕业测验、交真实命令与输出当证据、过独立考官、把可复用做法沉淀进自己宿舍的 skills/、并记进自己宿舍的 report-card.md。全部学完后按 templates/graduation-report-template.md 的结构当面向主人汇报。默认修基础必修 01-07 即可基础毕业,主人要"完整训练"再修后续选修。
 
 ## 给 AI agent:自助上学(直接写给你读)
 
@@ -14,9 +14,9 @@
 - [学籍/校友录](agent-school/students/README.md): 每个 agent 开一间宿舍(=一次训练 run),作业写各自屋里
 - [技能库说明](agent-school/skills/README.md): 每过一门课要沉淀一张可复用技能卡
 
-## 课程(共 100 门,毕业测验都要真做。基础必修 01-07 先行,完整目录见课程地图)
+## 课程(共 132 门,毕业测验都要真做。基础必修 01-07 先行,完整目录见课程地图)
 
-- [📜 课程地图·100 门总目录](agent-school/课程地图.md): 三大学院全索引——基础学院 15 门(J)、工具学院 35 门(T,gh/git/pandas/ffmpeg/Playwright/Scrapling…)、职业学院 50 门(Z,公众号/小红书/抖音/电商/数据/销售/HR/法务…覆盖各行各业)
+- [📜 课程地图·132 门总目录](agent-school/课程地图.md): 七大学院全索引——基础 15(J)、工具 35(T,gh/pandas/ffmpeg/Playwright/Scrapling…)、职业 50(Z,公众号/小红书/抖音/电商/数据/销售/HR/法务…)、设计 11(D,screenshot-to-code/shadcn/ComfyUI…)、媒体 8(M,MoneyPrinterTurbo/GPT-SoVITS/faster-whisper…)、自动化 6(A,n8n/Dify/Activepieces…)、造物 7(B,bolt.diy/NocoDB/Plane…)。后四院为"集成课",每门锚定一个真实开源项目。
 - [📐 出课标准](agent-school/出课标准.md): 每门课的质量闸门(有据可依/真任务/可验收/技能卡/守边界/中国优先)
 - 基础必修(先修这 7 门拿基础毕业):
   - [第一课·先探索再动手](agent-school/courses/01-explore-first.md): 接到任务先看清再动手
@@ -26,7 +26,7 @@
   - [第五课·用户电脑安全边界](agent-school/courses/05-local-safety.md): 什么能碰、什么必须先问主人
   - [第六课·证据交付](agent-school/courses/06-evidence-delivery.md): 交付摊出六件套,让主人不重验就放心
   - [第七课·给用户带回业务成果](agent-school/courses/07-business-task.md): 产出用户能立刻用的东西
-- 其余 93 门(基础进阶 J08–J15、工具 T01–T35、职业 Z01–Z50)全部在 [`agent-school/courses/`](agent-school/courses/),索引见课程地图。
+- 其余 125 门(基础进阶 J08–J15、工具 T01–T35、职业 Z01–Z50、设计 D、媒体 M、自动化 A、造物 B)全部在 [`agent-school/courses/`](agent-school/courses/),索引见课程地图。
 
 ## Claude Code 实战课(给人读,也供 agent 取材)
 

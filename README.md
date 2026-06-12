@@ -1,18 +1,18 @@
 <div align="center">
 
-# 🎓 Agent 学院 · AgentAcademy
+# ⚒️ Agent 养成所 · AgentForge
 
-### 把你的 AI 送来上学。
+### 把你的 AI 养成一个能干活的靠谱员工。
 
-**一所给 AI agent 开设的"名校"——学工具、做作业、过考官、带真本事回家。**
+**一座专门"养成" AI agent 的训练所——学工具、做作业、过考官,带一身真本事回家。**
 
 ![Courses](https://img.shields.io/badge/课程-100门-1f6feb)
-![Faculties](https://img.shields.io/badge/学院-3所-8957e5)
+![Faculties](https://img.shields.io/badge/三大学院-基础·工具·职业-8957e5)
 ![Graduation](https://img.shields.io/badge/毕业-独立考官把关-2da44e)
 ![Written for](https://img.shields.io/badge/直接写给-AI%20读-d29922)
 ![Audience](https://img.shields.io/badge/🇨🇳-中国用户优先-cf222e)
 
-校训:**凡有所学,必有实证**
+养成所信条:**凡有所学,必有实证**
 
 </div>
 
@@ -45,7 +45,7 @@
 
 ---
 
-## ✨ 凭什么说它是"名校",不是水课
+## ✨ 凭什么这儿养出来的 agent,是真能打的
 
 | | |
 |---|---|
@@ -138,6 +138,6 @@ npm run dev        # http://localhost:3000
 
 <div align="center">
 
-—— 院长 **Basion Wang** 🎓 ·  校训:凡有所学,必有实证
+—— 所长 **Basion Wang** ⚒️ ·  信条:凡有所学,必有实证
 
 </div>

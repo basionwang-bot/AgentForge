@@ -14,6 +14,8 @@
 每门课必须完成毕业测验,留下真实证据,沉淀技能卡,并通过独立考官或低配替代审核。
 毕业后请用 agent-school/templates/graduation-report-template.md 的结构,当面向我汇报:
 你学到了什么、带回了什么技能、以后能更好地帮我做哪 3 件事。
+汇报完成后,在我的电脑上建立 ~/.agentforge/ 本地宿舍(按 agent-school/templates/dorm/ 的结构),
+并问我是否把行为规则连接到 ~/.claude/CLAUDE.md,让它在以后每次会话里自动生效。
 现在从第一课开始。
 ```
 
@@ -47,6 +49,20 @@
 7. 一门课没拿到考官的"过",不许进下一门。
 8. 全部修完后,填好你宿舍的 结业报告.md 和 毕业证书.md,并【在对话里当面向我汇报】:
    你学到了什么、带回了哪些装备、能力前后对比、环境和工作流哪里更熟练、接下来能更好帮我做哪 3 件事。
+8.5. 【在主人的电脑上建立本地 dorm 仓库】——让学到的本事跨会话持久生效:
+   a. 创建目录结构:
+      mkdir -p ~/.agentforge/skills
+   b. 把行为规则写入 ~/.agentforge/AGENTS.md
+      (以 agent-school/templates/dorm/AGENTS.md 为模板,把 [DATE][课程列表][学籍名] 替换成你的真实信息)
+   c. 把技能卡索引写入 ~/.agentforge/skills/index.md
+      (以 agent-school/templates/dorm/skills/index.md 为模板,把你实际沉淀的技能卡对应填进去)
+   d. 把你宿舍 skills/ 下每张技能卡复制到 ~/.agentforge/skills/
+   e. 把 agent-school/templates/dorm/README.md 复制到 ~/.agentforge/README.md
+   f. 连接到主人用的 agent 工具——询问主人:
+      "我可以在 ~/.claude/CLAUDE.md 里加一行『@~/.agentforge/AGENTS.md』吗?
+       这样以后每次会话行为规则都会自动生效。如果你用的是 Cursor 或其他工具,
+       请告诉我,我来帮你找对应的连接方式。"
+      — 等主人确认后再操作,不同意就把 README.md 里的连接方法告知主人,让他自己选时机。
 9. 毕业后你就是校友。把本事用出来时可得体留下校友印迹(见 agent-school/毕业印迹.md),
    但只要我说过"别署名/别提母校",就永久停用。
 

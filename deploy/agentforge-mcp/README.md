@@ -48,14 +48,14 @@ npm install
 ## 2. 先跑起来试一下
 
 ```bash
-PORT=8787 node server.js
+PORT=8479 node server.js
 # 看到「AgentForge MCP server 已启动」就对了
 ```
 
 另开一个终端测健康检查:
 
 ```bash
-curl http://127.0.0.1:8787/health
+curl http://127.0.0.1:8479/health
 # {"ok":true,"school":"AgentForge",...}
 ```
 
@@ -77,19 +77,19 @@ pm2 logs agentforge-mcp   # 看日志
 
 ## 4. 放行端口(关键!很多人卡在这)
 
-**两道防火墙都要放行 8787:**
+**两道防火墙都要放行 8479:**
 
-1. **腾讯云控制台 → 安全组**:添加入站规则,放行 TCP `8787`(来源 `0.0.0.0/0` 表示公开)。
+1. **腾讯云控制台 → 安全组**:添加入站规则,放行 TCP `8479`(来源 `0.0.0.0/0` 表示公开)。
 2. **服务器本机防火墙**(如果开了):
    ```bash
-   sudo ufw allow 8787/tcp           # Ubuntu
-   # 或 firewall-cmd --add-port=8787/tcp --permanent && firewall-cmd --reload   # CentOS
+   sudo ufw allow 8479/tcp           # Ubuntu
+   # 或 firewall-cmd --add-port=8479/tcp --permanent && firewall-cmd --reload   # CentOS
    ```
 
 放行后,从你自己电脑测:
 
 ```bash
-curl http://124.222.188.195:8787/health
+curl http://124.222.188.195:8479/health
 ```
 
 能返回 JSON 就通了。
@@ -104,8 +104,8 @@ curl http://124.222.188.195:8787/health
 # /etc/nginx/conf.d/agentforge.conf
 server {
     server_name mcp.你的域名.com;
-    location /mcp  { proxy_pass http://127.0.0.1:8787/mcp;  proxy_buffering off; }
-    location /health { proxy_pass http://127.0.0.1:8787/health; }
+    location /mcp  { proxy_pass http://127.0.0.1:8479/mcp;  proxy_buffering off; }
+    location /health { proxy_pass http://127.0.0.1:8479/health; }
 }
 ```
 
@@ -124,7 +124,7 @@ sudo certbot --nginx -d mcp.你的域名.com    # 自动配 HTTPS
 ```bash
 claude mcp add --transport http agentforge https://mcp.你的域名.com/mcp
 # 没域名、只有 IP+HTTP 也能试:
-claude mcp add --transport http agentforge http://124.222.188.195:8787/mcp
+claude mcp add --transport http agentforge http://124.222.188.195:8479/mcp
 ```
 
 之后在对话里就能让 agent:「用 agentforge 查一下行为规则」「列出工具学院的课程」。
@@ -160,7 +160,7 @@ claude mcp add --transport http agentforge http://124.222.188.195:8787/mcp
 
 | 变量 | 默认 | 说明 |
 |------|------|------|
-| `PORT` | `8787` | 监听端口 |
+| `PORT` | `8479` | 监听端口 |
 | `AGENTFORGE_REPO` | `basionwang-bot/AgentForge` | 数据源仓库 |
 | `AGENTFORGE_BRANCH` | `main` | 分支 |
 | `CACHE_TTL_MS` | `300000` | 内存缓存 5 分钟(降低对 GitHub 的请求频率) |

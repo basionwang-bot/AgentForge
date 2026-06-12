@@ -6,7 +6,7 @@ module.exports = {
       name: 'agentforge-mcp',
       script: 'server.js',
       env: {
-        PORT: '8787',
+        PORT: '8479',
         AGENTFORGE_REPO: 'basionwang-bot/AgentForge',
         AGENTFORGE_BRANCH: 'main',
         CACHE_TTL_MS: '300000',

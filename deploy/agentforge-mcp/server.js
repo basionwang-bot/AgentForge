@@ -4,7 +4,7 @@
 // 特点:服务器本身不存数据,所有内容实时从 GitHub raw 拉取(推送即更新),
 //       因此走 raw.githubusercontent.com(无 API 速率限制),只读、无副作用。
 //
-// 启动:PORT=8787 node server.js
+// 启动:PORT=8479 node server.js
 // 健康检查:GET /health  ·  MCP 端点:POST /mcp
 
 import express from 'express';
@@ -16,7 +16,7 @@ import { z } from 'zod';
 const REPO = process.env.AGENTFORGE_REPO || 'basionwang-bot/AgentForge';
 const BRANCH = process.env.AGENTFORGE_BRANCH || 'main';
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/`;
-const PORT = parseInt(process.env.PORT || '8787', 10);
+const PORT = parseInt(process.env.PORT || '8479', 10);
 const CACHE_TTL_MS = parseInt(process.env.CACHE_TTL_MS || '300000', 10); // 5 分钟
 
 // ---- 轻量内存缓存(避免频繁打 GitHub)----

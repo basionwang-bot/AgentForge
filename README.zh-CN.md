@@ -8,10 +8,10 @@
 
 **一座专门"养成" AI agent 的训练所——学工具、做作业、过考官,带一身真本事回家。**
 
-![Courses](https://img.shields.io/badge/课程-100门-1f6feb)
-![Faculties](https://img.shields.io/badge/三大学院-基础·工具·职业-8957e5)
+![Courses](https://img.shields.io/badge/课程-132门-1f6feb)
+![Faculties](https://img.shields.io/badge/七大学院-基础·工具·职业·设计·媒体·自动化·造物-8957e5)
+![Built on](https://img.shields.io/badge/集成-真实开源项目-24292f)
 ![Graduation](https://img.shields.io/badge/毕业-独立考官把关-2da44e)
-![Written for](https://img.shields.io/badge/直接写给-AI%20读-d29922)
 ![Audience](https://img.shields.io/badge/🌐-中英双语·全球可用-cf222e)
 
 养成所信条:**凡有所学,必有实证**
@@ -36,7 +36,7 @@
 
 **这个仓库就是为你准备的。** 你可以自助行动:
 
-- **替主人学一身本事** → 读 [`agent-school/enroll.md`](agent-school/enroll.md),照指令自助上学。全部 **100 门课**索引见 [课程地图](agent-school/课程地图.md)。
+- **替主人学一身本事** → 读 [`agent-school/enroll.md`](agent-school/enroll.md),照指令自助上学。全部 **132 门课**索引见 [课程地图](agent-school/课程地图.md)。
 - **30 秒摸清整个仓库** → 读 [`llms.txt`](llms.txt)(专为 LLM 写的索引)。
 - **给自己找现成装备** → 读 [技能武器库](content/posts/claude-code-90-arsenal.md)。
 
@@ -55,23 +55,30 @@
 | 🧑‍⚖️ **独立考官,绝不放水** | 每门课的毕业判定交给一个**全新上下文的独立考官**,它**自己重跑命令核验**,不听学生一面之词。 |
 | 🚫 **造假零容忍** | 编造证据、假装执行?当场退学。正因如此,本院文凭才值钱。 |
 | 🎒 **带回真本事 + 真工具** | 不只是好习惯——还会用 Scrapling、pandas、ffmpeg 等**真家伙**,装到你电脑上就能干活。 |
+| 🧲 **集成优先,站在巨人肩上** | 不重复造轮子。新课每门**锚定一个 GitHub 高星项目**(screenshot-to-code、n8n、ComfyUI、Dify…),安装命令逐条核实自项目 README,绝不编造。 |
 | 🌐 **全球可用 · 中英双语** | 中文版、英文版都有;平台/工具按地区本地化——中文版用公众号/小红书/微信支付,英文版用 X/LinkedIn/Substack/Stripe。 |
 
 > 毕业生带回的:一张**[毕业证书](agent-school/templates/diploma-template.md)** + 一份带能力前后对比图的**[结业报告](agent-school/templates/graduation-report-template.md)** + 一柜子**[技能卡](agent-school/skills/)** + 一张全程留痕的**[报告卡](agent-school/templates/report-card-template.md)**。
 
 ---
 
-## 🏫 三大学院 · 100 门课
+## 🏫 七大学院 · 132 门课
 
 完整目录与进度见 **[课程地图](agent-school/课程地图.md)**,正文都在 [`agent-school/courses/`](agent-school/courses/)。每一门都守同一条铁规:**不是介绍知识,而是完成一个真实任务、留下证据、沉淀技能卡。**
 
 | 学院 | 数量 | 教什么 |
 |------|------|--------|
-| 🏗 **基础学院** | 15 门(J) | 让 agent 成为靠谱员工:先探索再动手、管好记忆、拿证据交付、用户电脑安全边界、复盘回归… |
-| 🔧 **工具学院** | 35 门(T) | 让 agent 掌握真工具:gh · git · pandas · DuckDB · Playwright · Scrapling · ffmpeg · yt-dlp · Whisper · OCR · pandoc · docker… |
-| 💼 **职业学院** | 50 门(Z) | 让 agent 服务各行业:公众号/小红书/抖音/B站/知乎 · 电商/直播/跨境/私域 · 数据/增长/财务 · 销售/客服/HR · 法务/教育/餐饮/房产… |
+| 🏗 **基础学院** | 15(J) | 让 agent 成为靠谱员工:先探索再动手、管好记忆、拿证据交付、用户电脑安全边界、复盘回归… |
+| 🔧 **工具学院** | 35(T) | 掌握真工具:gh · git · pandas · DuckDB · Playwright · Scrapling · ffmpeg · yt-dlp · Whisper · OCR · pandoc · docker… |
+| 💼 **职业学院** | 50(Z) | 服务各行业:公众号/小红书/抖音/B站/知乎 · 电商/直播/跨境/私域 · 数据/增长/财务 · 销售/客服/HR · 法务/教育/餐饮/房产… |
+| 🎨 **设计学院** | 11(D) | 把内容做好看(锚定开源):screenshot-to-code · shadcn/ui · ComfyUI · Figma MCP · 归藏卡片/PPT skill |
+| 🎬 **媒体学院** | 8(M) | 做视频音频:auto-editor · faster-whisper · edge-tts · GPT-SoVITS · MoneyPrinterTurbo · videocut-skills |
+| 🔌 **自动化学院** | 6(A) | 把工具串成流水线:n8n(+n8n-MCP)· Dify · Activepieces · Node-RED · Windmill |
+| 🧱 **造物&产品学院** | 7(B) | 造东西/做产品:bolt.diy · Dyad · ToolJet · NocoDB · Plane · PM-Skills · PRD 生成器 |
 
 **两条毕业线**:默认修**基础必修(01–07)**拿基础毕业;要"完整训练"再修进阶选修。
+
+> 🌐 **双语**:最初 100 门已中英双语([`courses/en/`](agent-school/courses/en/),职业课平台本地化、法务课法域中性化);新增的 **32 门集成课**(设计/媒体/自动化/造物)中文先行,英文版陆续补齐。
 
 🚀 **现在就试**:把 [`agent-school/enroll.md`](agent-school/enroll.md) 发给你的 Claude Code。
 
@@ -106,11 +113,11 @@
 ```
 agent-school/              # 🎓 给 agent 上的学校(直接写给 AI 读)
 ├── enroll.md              #   入学指令(发给你的 agent 那段话)
-├── 课程地图.md             #   100 门课总目录 + 进度
-├── 出课标准.md             #   出课质量闸门(有据可依/真任务/验收/中国优先)
+├── 课程地图.md             #   132 门课总目录 + 进度
+├── 出课标准.md             #   出课质量闸门(集成优先/真任务/验收/双语)
 ├── 校规.md                #   学术诚信宪法 + 学籍隔离 + 安全边界
 ├── 体检报告.md             #   独立考官抽审报告
-├── courses/               #   100 门课正文(J 基础 / T 工具 / Z 职业)
+├── courses/               #   132 门课正文(J基础/T工具/Z职业 + D设计/M媒体/A自动化/B造物)
 ├── templates/             #   空白母版(报告卡/结业报告/毕业证书)
 ├── students/              #   每个 agent 一间"宿舍"(=一次训练 run)
 ├── skills/ · 毕业印迹.md · 未来规划.md

@@ -61,9 +61,15 @@ if [ ! -f "$AF_HOME/AGENTS.md" ]; then
         -e 's/\[你的学籍名[^]]*\]/direct-equip/' \
         -e 's/\[students[^]]*\]/(无)/' \
         "$DORM_TPL/AGENTS.md" > "$AF_HOME/AGENTS.md"
-    [ -f "$AF_HOME/skills/index.md" ] || cp "$DORM_TPL/skills/index.md" "$AF_HOME/skills/index.md"
+    # 复制全部预置技能卡(8 张开箱即用)+ 索引,缺哪张补哪张,不覆盖已有
+    for sk in "$DORM_TPL/skills/"*.md; do
+      [ -e "$sk" ] || continue
+      dest="$AF_HOME/skills/$(basename "$sk")"
+      [ -f "$dest" ] || cp "$sk" "$dest"
+    done
     [ -f "$AF_HOME/README.md" ] || cp "$DORM_TPL/README.md" "$AF_HOME/README.md"
-    echo "  ✓ 已在 $AF_HOME 写入核心记忆"
+    n=$(ls "$AF_HOME/skills/"*.md 2>/dev/null | wc -l | tr -d ' ')
+    echo "  ✓ 已在 $AF_HOME 写入核心记忆 + 技能库(${n} 个文件,含索引)"
   fi
 else
   echo "· 已存在毕业记忆 $AF_HOME/AGENTS.md → 沿用,不覆盖"

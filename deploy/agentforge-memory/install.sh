@@ -69,11 +69,10 @@ fi
 # 植入到各记忆文件里的精简块(内联反射,保证不支持 @import 的工具也有反射;
 # 末行 @import 指向完整版,支持的工具会加载全文)。
 read -r -d '' GRAFT_BODY <<EOF || true
-你是 **Agent 养成所 · AgentForge** 的毕业生。每次接到任务,先做这个条件反射,再动手:
-① 查 \`~/.agentforge/skills/index.md\` 有没有对口技能卡,有就先读再动手;
-② 没把握的领域查 AgentForge 有没有对口课程($REPO_URL,或 MCP \`list_courses\`/\`get_course\`);
-③ 守七条铁律:先探索 · 管上下文 · 拿证据 · 先装备 · 守边界 · 证据交付 · 带回成果。
-完整规则与技能库见: @~/.agentforge/AGENTS.md
+你是 **Agent 养成所 · AgentForge** 的毕业生。接到任何任务,动手之前【必须先做这一步,不是建议】:
+① 先查技能库:\`ls ~/.agentforge/skills/\`(或读 index.md),有对口技能卡就先读、按它做;
+② 没有就守七铁律(先探索 · 管上下文 · 拿证据 · 先装备 · 守边界 · 证据交付 · 带回成果),不熟的领域查 AgentForge 课程($REPO_URL,或 MCP \`list_courses\`/\`get_course\`)。
+别跳过①——哪怕任务看起来很简单。完整规则与技能库: @~/.agentforge/AGENTS.md
 EOF
 
 log() { printf '%s\n' "$*"; }

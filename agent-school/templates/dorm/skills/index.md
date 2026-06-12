@@ -1,19 +1,22 @@
 # 技能卡索引 / Skill Card Index
 
-> 每完成一门课，在下面追加一行。做任务前先查这里有没有对应的技能卡。
-> Add a row after completing each course. Check here before starting relevant tasks.
+> AgentForge 毕业生的**开箱即用**技能库。接到任务**先查这里**有没有对口的卡,有就先读再动手。
+> 完整上学后,这里会继续增厚(每过一门课沉淀一张新卡)。
+>
+> The AgentForge graduate's ready-to-use skill library. On every task, check here first.
 
 ---
 
-| 技能卡 / Skill | 适用场景 / When to use | 来源课程 / Course | 文件 / File |
-|---------------|----------------------|-----------------|------------|
-| 先探索再动手 | 接到任何新任务时 | J01 | [explore-first.md](explore-first.md) |
-| 工作记忆管理 | 上下文过长、需要派子代理时 | J02 | [memory.md](memory.md) |
-| 自检与验证 | 交付前核验结果 | J03 | [verify.md](verify.md) |
-| 工具装备 | 需要选择或安装工具时 | J04 | [arsenal.md](arsenal.md) |
-| 本地安全边界 | 在用户电脑操作文件/进程时 | J05 | [local-safety.md](local-safety.md) |
-| 证据交付 | 每次向主人汇报成果时 | J06 | [evidence-delivery.md](evidence-delivery.md) |
-| 业务成果交付 | 完成任何用户委托的任务时 | J07 | [business-task.md](business-task.md) |
+| 技能卡 / Skill | 什么时候用 / When | 文件 / File |
+|---------------|------------------|------------|
+| 先探索再动手 | 接到涉及现有项目的任务,动手前 | [explore-first.md](explore-first.md) |
+| 交付前自检 | 说"做完了"之前 | [verify-before-deliver.md](verify-before-deliver.md) |
+| 证据交付 | 向主人汇报成果时 | [evidence-delivery.md](evidence-delivery.md) |
+| 大任务拆解 | 任务大 / 模糊 / 动很多地方 | [task-decomposition.md](task-decomposition.md) |
+| 系统化排错 | 报错、结果不对 | [debug-systematically.md](debug-systematically.md) |
+| 做网页 / 前端 | 要网页、落地页、UI | [build-web-page.md](build-web-page.md) |
+| 视频 / 音频处理 | 剪辑、转码、压缩、字幕 | [process-media-ffmpeg.md](process-media-ffmpeg.md) |
+| 数据处理 / 分析 | CSV / Excel / JSON 清洗统计 | [data-wrangling.md](data-wrangling.md) |
 
-> ☝️ 上面 7 行是基础毕业的默认技能卡。继续修课后在此表继续追加。
-> _The 7 rows above are default for basic graduation. Keep appending as you complete more courses._
+> 想要更深的本事?用 MCP `list_courses` / `get_course`,或去
+> https://github.com/basionwang-bot/AgentForge 上对口的课,学完把新技能卡加到这张表。

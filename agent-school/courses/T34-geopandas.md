@@ -155,60 +155,137 @@ print("地图已保存到 output/china_population.png")
 | 计算面积 | `gdf.geometry.area`(需先转到米制坐标系) |
 | 计算中心点 | `gdf.geometry.centroid` |
 | 创建缓冲区 | `gdf.geometry.buffer(1000)`(1000 米,需米制坐标系) |
-| 两个面是否相交 | `gdf1.intersects(gdf2.unary_union)` |
-| 合并多个面 | `gdf.unary_union` |
+| 两个面是否相交 | `gdf1.intersects(gdf2.union_all())` |
+| 合并多个面 | `gdf.union_all()` |
 | 空间连接 | `gpd.sjoin(left, right, how=, predicate=)` |
 
 ---
 
 ## 📝 毕业测验(必须真做,交证据)
 
-**任务:读取一份中国省级行政区 GeoJSON,完成空间筛选和地图绘制。**
+**任务:用内嵌的极简 GeoJSON 数据,完成空间筛选和地图绘制。测验数据完全内嵌——离线可跑,无需下载任何文件。**
 
-使用阿里云公开地图数据集(国内可直接访问):
-- 数据来源: [datav.aliyun.com/portal/school/atlas/area_selector](https://datav.aliyun.com/portal/school/atlas/area_selector)
-- 或使用本地准备好的 `china_provinces.geojson`(如已有)
+### 第一步:写出内嵌数据(用 cat 命令直接生成)
 
-1. **写出读取和探索数据的代码**:
-   ```python
-   import geopandas as gpd
-   gdf = gpd.read_file("china_provinces.geojson")
-   # 打印:行数、列名、坐标系、几何类型
-   ```
+```bash
+# 把极简 GeoJSON 写到本地(包含 6 个中国城市点位 + 3 个示意区域多边形)
+cat > /tmp/cities.geojson << 'EOF'
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "properties": {"name": "上海", "region": "长三角", "pop": 2400}, "geometry": {"type": "Point", "coordinates": [121.47, 31.23]}},
+    {"type": "Feature", "properties": {"name": "杭州", "region": "长三角", "pop": 1200}, "geometry": {"type": "Point", "coordinates": [120.15, 30.28]}},
+    {"type": "Feature", "properties": {"name": "南京", "region": "长三角", "pop": 930},  "geometry": {"type": "Point", "coordinates": [118.80, 32.06]}},
+    {"type": "Feature", "properties": {"name": "北京", "region": "华北",   "pop": 2100}, "geometry": {"type": "Point", "coordinates": [116.40, 39.90]}},
+    {"type": "Feature", "properties": {"name": "天津", "region": "华北",   "pop": 1560}, "geometry": {"type": "Point", "coordinates": [117.19, 39.13]}},
+    {"type": "Feature", "properties": {"name": "广州", "region": "珠三角", "pop": 1870}, "geometry": {"type": "Point", "coordinates": [113.26, 23.13]}}
+  ]
+}
+EOF
 
-2. **写出筛选代码**:从全国省级数据里提取"长三角三省一市"(上海、江苏、浙江、安徽):
-   ```python
-   yangtze_delta = gdf[gdf['name'].isin(['上海市', '江苏省', '浙江省', '安徽省'])]
-   ```
+cat > /tmp/regions.geojson << 'EOF'
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "properties": {"name": "长三角示意区"}, "geometry": {"type": "Polygon", "coordinates": [[[117.5, 29.5],[122.5, 29.5],[122.5, 33.5],[117.5, 33.5],[117.5, 29.5]]]}},
+    {"type": "Feature", "properties": {"name": "华北示意区"},   "geometry": {"type": "Polygon", "coordinates": [[[114.5, 38.5],[120.0, 38.5],[120.0, 41.0],[114.5, 41.0],[114.5, 38.5]]]}},
+    {"type": "Feature", "properties": {"name": "珠三角示意区"}, "geometry": {"type": "Polygon", "coordinates": [[[111.5, 22.0],[115.5, 22.0],[115.5, 24.5],[111.5, 24.5],[111.5, 22.0]]]}}
+  ]
+}
+EOF
+echo "数据文件已写入 /tmp/cities.geojson 和 /tmp/regions.geojson"
+```
 
-3. **写出画图代码**:
-   - 画全国地图(底图用灰色)
-   - 长三角区域用红色高亮
-   - 保存到 `output/yangtze_delta.png`
+### 第二步:完整测验脚本(`/tmp/geopandas_task.py`)
 
-4. **写出验收标准**:
-   - `output/yangtze_delta.png` 存在且非空
-   - 图中可见 4 个区域被高亮
-   - 脚本无报错退出
+```python
+import geopandas as gpd
+import matplotlib
+matplotlib.use('Agg')  # 非交互环境必须加这行,否则报错
+import matplotlib.pyplot as plt
+import os
 
-5. **回答以下问题(内嵌测验)**:
-   - Q: 为什么做空间运算前要先 `.to_crs()` 统一坐标系?
-   - Q: `sjoin` 的 `predicate="within"` 和 `predicate="intersects"` 有什么区别?
-   - Q: GeoPandas 的 GeoDataFrame 和普通 pandas DataFrame 最核心的区别是什么?
+# 1. 读取内嵌数据(离线,无需联网)
+cities  = gpd.read_file("/tmp/cities.geojson")
+regions = gpd.read_file("/tmp/regions.geojson")
 
-6. **沉淀技能卡**:把读取、坐标系转换、空间筛选、画图四个核心步骤沉淀成 `skills/geopandas.md`。
+print(f"城市数量: {len(cities)}")
+print(f"列名: {list(cities.columns)}")
+print(f"坐标系: {cities.crs}")
+print(f"几何类型:\n{cities.geometry.geom_type.value_counts()}")
+print(cities[["name", "region", "pop"]])
 
-> ⚠️ **安全边界:** `pip install geopandas`——**安装前先征得主人确认**。代码本身只读取本地文件、不联网,写好后可以等主人确认环境后再执行。
+# 2. 普通筛选:找人口超过 1500 万的城市
+big_cities = cities[cities["pop"] > 1500]
+print(f"\n人口 > 1500 万的城市: {list(big_cities['name'])}")
+
+# 3. 统一坐标系(空间操作前必须统一!)
+cities  = cities.to_crs(epsg=4326)
+regions = regions.to_crs(epsg=4326)
+
+# 4. 空间筛选:用 sjoin 找落在"长三角示意区"内的城市
+yangtze = regions[regions["name"] == "长三角示意区"]
+cities_in_yangtze = gpd.sjoin(
+    cities,
+    yangtze,
+    how="inner",
+    predicate="within"
+)
+print(f"\n落在长三角示意区内的城市: {list(cities_in_yangtze['name'])}")
+
+# 5. 合并区域多边形(union_all 是新写法,旧写法 unary_union 已弃用)
+merged = regions.union_all()
+print(f"\n合并后的几何类型: {merged.geom_type}")
+
+# 6. 画图
+os.makedirs("/tmp/output", exist_ok=True)
+fig, ax = plt.subplots(1, 1, figsize=(10, 8))
+regions.plot(ax=ax, color="lightgrey", edgecolor="black", linewidth=0.8)
+cities.plot(ax=ax, color="steelblue", markersize=60, zorder=3)
+cities_in_yangtze.plot(ax=ax, color="red", markersize=80, zorder=4)
+for _, row in cities.iterrows():
+    ax.annotate(row["name"], xy=(row.geometry.x, row.geometry.y),
+                xytext=(4, 4), textcoords="offset points", fontsize=9)
+ax.set_title("中国三大城市群示意图(红色=长三角城市)")
+plt.tight_layout()
+output_path = "/tmp/output/city_regions.png"
+plt.savefig(output_path, dpi=150, bbox_inches="tight")
+print(f"\n地图已保存到 {output_path}")
+plt.close()
+
+# 7. 验收断言
+assert os.path.exists(output_path), "地图文件不存在"
+assert os.path.getsize(output_path) > 1000, "地图文件太小,可能为空"
+assert len(cities_in_yangtze) > 0, "长三角区域内应至少有一个城市"
+print("\n验收通过 ✓")
+```
+
+**要交的证据:**
+- 脚本完整输出(含"验收通过 ✓")
+- `/tmp/output/city_regions.png` 存在且非空
+
+### 第三步:回答内嵌测验
+
+- Q: 为什么做空间运算前要先 `.to_crs()` 统一坐标系?
+- Q: `sjoin` 的 `predicate="within"` 和 `predicate="intersects"` 有什么区别?
+- Q: GeoPandas 的 GeoDataFrame 和普通 pandas DataFrame 最核心的区别是什么?
+- Q: `union_all()` 替代了旧方法的哪个写法?旧写法为什么被弃用?
+
+**沉淀技能卡**:把读取、坐标系转换、空间筛选、画图四个核心步骤沉淀成 `skills/geopandas.md`。
+
+> ⚠️ **安全边界:** `pip install geopandas`——**安装前先征得主人确认**。测验脚本本身只读写本地文件、完全不联网,写好后可等主人确认环境后再执行。
 
 ---
 
 ## 🎓 过关标准
 
+- [ ] 你跑通了测验脚本,附上了完整输出(含"验收通过 ✓")和地图文件
 - [ ] 你能写出读取 GeoJSON 文件并打印基本信息的代码
 - [ ] 你能解释**坐标系(CRS)**是什么,为什么空间操作前必须统一
-- [ ] 你能写出用 `.isin()` 和 `gpd.sjoin()` 两种方式做空间筛选的代码
-- [ ] 你能写出用 `.plot()` 画带颜色映射地图并保存到文件的代码
-- [ ] 你回答了 3 个内嵌测验问题,逻辑正确
+- [ ] 你能写出用 `gpd.sjoin()` 做空间筛选的代码(含 `predicate` 参数)
+- [ ] 你能写出用 `.plot()` 画带颜色高亮地图并保存到文件的代码
+- [ ] 你知道 `union_all()` 是 `unary_union` 的新写法,能说出旧写法为什么被弃用
+- [ ] 你回答了 4 个内嵌测验问题,逻辑正确
 - [ ] 已沉淀 1 张技能卡到你宿舍的 [`skills/`](../skills/)
 - [ ] **独立考官**(全新上下文子代理,或按 [校规第四条](../校规.md) 的低配 fallback)判「过」
 

@@ -1,4 +1,4 @@
-# 第 J09 课 · 反向采访需求
+# 第 J09 课 · 反向采访需求:四类问题 + 七字段 SPEC
 
 > **学员:正在上学的你(AI agent)** ｜ 先修:第 J01~J08 课 ｜ 难度:★★☆ ｜ 源头:本仓库实战课模块二"让 Claude 反过来采访你" + Anthropic 最佳实践(clarification before action)
 

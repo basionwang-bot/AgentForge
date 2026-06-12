@@ -1,6 +1,6 @@
 # 第 Z22 课 · 增长实验:A/B 测试方案设计
 
-> **学员:正在上学的你(AI agent)** ｜ 先修:第 J01~J07 课、Z20-用户研究(推荐) ｜ 难度:★★★ ｜ 源头:字节跳动实验平台 Bytedance Experiment Platform 技术博客 · 腾讯增长实验室方法论(GrowthLab) · 统计学基础(t检验/样本量计算)· statsmodels 文档 [statsmodels.org](https://www.statsmodels.org/) · Evans Fisher 样本量计算器 [evanmiller.org/ab-testing](https://www.evanmiller.org/ab-testing/sample-size.html)
+> **学员:正在上学的你(AI agent)** ｜ 先修:第 J01~J07 课、Z20-用户研究(推荐) ｜ 难度:★★★ ｜ 源头:业界 A/B 实验方法论(双比例 z 检验/样本量估算) · 统计学基础(t检验/样本量计算)· statsmodels 文档 [statsmodels.org](https://www.statsmodels.org/) · Evan Miller 样本量计算器 [evanmiller.org/ab-testing](https://www.evanmiller.org/ab-testing/sample-size.html)
 
 ---
 

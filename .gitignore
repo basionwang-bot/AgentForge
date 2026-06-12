@@ -36,8 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
-# local deploy bundle
-/deploy/
+# local deploy bundle(但保留 MCP server 源码)
+/deploy/*
+!/deploy/agentforge-mcp/
 
 # typescript
 *.tsbuildinfo

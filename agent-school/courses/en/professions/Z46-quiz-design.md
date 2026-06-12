@@ -103,6 +103,13 @@ After completing the full item set, run through this checklist:
 □ Is the estimated time realistic? (How many marks per minute; is the total duration appropriate?)
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Open-source projects can help here, but **ask the owner before installing, connecting accounts, or going online.** Star counts are approximate.
+
+- **ECuiDev/obsidian-quiz-generator** ([github.com/ECuiDev/obsidian-quiz-generator](https://github.com/ECuiDev/obsidian-quiz-generator), ~1.2k ⭐) — An Obsidian plugin supporting 7 question types (single-choice, multiple-choice, true/false, fill-in-the-blank, short answer, etc.), with local Ollama model support for fully offline operation, and multi-language support. **How to use:** Paste the knowledge-point outline from this course into an Obsidian note, batch-generate question drafts with the plugin, then edit manually. **Honest note: update frequency has slowed in the past year and some features may be unstable** — running it with a local Ollama + capable open model for offline inference is recommended over cloud API calls.
+- **Anki + LLM export (alternative)** ([github.com/search?q=anki+llm](https://github.com/search?q=anki+llm), multiple similar projects) — Exports questions in bulk to Anki flashcard format, ideal for the "remember / understand" tier of Bloom's Taxonomy for spaced repetition. **How to use:** Export the foundational (recall/comprehension-level) questions from your quiz set as Anki cards for student self-testing after class. Anki itself is completely free and widely available.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

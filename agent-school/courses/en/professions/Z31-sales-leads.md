@@ -196,6 +196,14 @@ Acme Corp | Manufacturing | 200 | Jane Smith | VP Procurement | +1-555-xxxx | j@
 - Sensitive field handling: this list does not include personal ID numbers, home addresses, or other non-essential private information
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **Twenty** ([github.com/twentyhq/twenty](https://github.com/twentyhq/twenty), ~45k ⭐) — A modern AI-era open-source CRM with a clean interface that supports self-hosting, ideal for storing and managing enriched lead data. **How to use:** Import the enriched lead list produced in this course into Twenty, assign leads by priority to sales reps, and track follow-up status and next-contact dates. Self-deployable so data stays on your own server.
+
+- **Mautic** ([github.com/mautic/mautic](https://github.com/mautic/mautic), ~7k ⭐) — An open-source marketing automation platform with lead scoring, behavioral tracking, and automated nurture workflows. **How to use:** Set up scoring rules (viewed pricing page +10 pts, opened email +5 pts) so high-scoring leads automatically surface to sales for priority follow-up. Requires self-hosting.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

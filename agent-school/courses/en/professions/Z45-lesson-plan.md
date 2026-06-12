@@ -102,6 +102,12 @@ If designing a lesson for **Boolean Bear Coding** (enrollment demos or regular i
 | K12 AI literacy elective | 45 min | Discussion + case analysis | Exit ticket + group report |
 | Adult / parent AI tools intro (training) | 2 hours | Hands-on + scenario demo | Complete a task on the spot |
 
+## 🧰 Companion open-source projects (optional)
+
+> Open-source projects can help here, but **ask the owner before installing, connecting accounts, or going online.** Star counts are approximate.
+
+- **classroomio/classroomio** ([github.com/classroomio/classroomio](https://github.com/classroomio/classroomio), ~3k ⭐) — An open-source LMS (Learning Management System) with built-in AI lesson-plan generation, session management, and learner progress tracking, supporting self-hosted deployment. **How to use:** Import the lesson plan drafts produced in this course as session content, then use ClassroomIO's AI-assist features to quickly generate interactive activities and assessment questions. The interface defaults to English — **non-English content adaptation requires manual work.** For privacy-sensitive educational contexts, self-hosting is recommended to protect student data.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

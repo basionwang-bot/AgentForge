@@ -237,6 +237,12 @@ LinkedIn company pages — headcount, job posting analysis for strategic signals
 LinkedIn Jobs, Indeed — search competitor company name; job descriptions reveal product direction
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **Crawl4AI** ([github.com/unclecode/crawl4ai](https://github.com/unclecode/crawl4ai), ~68k ⭐) — A local web crawler that outputs page content directly as Markdown ready to feed into AI analysis — no manual copy-pasting required. **How to use:** Batch-scrape competitor homepages, pricing pages, blogs, and job listings; hand the Markdown to AI to extract a structured competitor feature table. **Note:** Respect robots.txt, skip login-required pages, rate-limit your requests (add sleep intervals); usable without VPN in most regions.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

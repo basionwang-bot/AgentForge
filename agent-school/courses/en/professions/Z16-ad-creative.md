@@ -155,6 +155,13 @@ TikTok note: Lean into authentic feel — smartphone-shot aesthetic, real home s
 Meta note: Clean product imagery works for Feed; more dynamic cut for Stories/Reels.
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before installing, connecting accounts, or going online.** Star counts are approximate at research time — verify before you install.
+
+- **marketingskills (ad-creative module)** ([github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), ~33k ⭐) — A comprehensive marketing skills toolkit whose ad-creative module covers perspective-matrix expansion, emotional-tone variant generation, and CTA copy production. **How to use:** Call it during the "bulk variant expansion by perspective matrix" stage to quickly generate 10–20 headline candidates, then filter and refine them through this course's compliance check + platform-fit flow. ⚠️ **Primarily designed for English-language ad scenarios; TikTok Ads / Meta Ads localization and platform-specific compliance rules require additional prompt engineering.**
+- **guizang-social-card-skill** ([github.com/op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill), ~3.4k ⭐) — Generates image-and-text cards, useful for suggesting static visual directions for ad creatives. **How to use:** After finalizing the copy variant pack, feed selected headlines into this Skill to generate visual concept references — a concrete "creative direction brief" for your design team. Owner confirmation required before installation.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

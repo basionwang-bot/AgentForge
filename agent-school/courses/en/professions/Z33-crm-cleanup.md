@@ -247,6 +247,14 @@ Dormant (no contact in 180+ days): XX
 - Sensitive field handling: [describe]
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **Twenty** ([github.com/twentyhq/twenty](https://github.com/twentyhq/twenty), ~45k ⭐) — A modern AI-era open-source CRM with self-hosting support. **How to use:** Import the cleaned and tagged customer data directly into Twenty as the landing platform for your cleanup output, so the sales team can start working on clean data immediately. Data stays on your own server.
+
+- **EspoCRM** ([github.com/espocrm/espocrm](https://github.com/espocrm/espocrm), ~2k ⭐) — A lightweight open-source CRM with a low learning curve and simple configuration, well-suited for small teams who need to move fast. **How to use:** If the team isn't ready for Twenty, EspoCRM is a lower-barrier alternative — import a clean CSV and you're running. Honest note: lower star count and smaller community than Twenty, but has a solid stability track record.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

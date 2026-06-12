@@ -207,6 +207,14 @@ Watch list: West — MoM down X%
 (Note data coverage, whether online-only, whether returns are excluded, etc.)
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **Metabase** ([github.com/metabase/metabase](https://github.com/metabase/metabase), ~40k ⭐) — A zero-SQL sales dashboard that connects directly to your database and auto-refreshes sales data. **How to use:** Upgrade the monthly sales analysis report produced in this course into a live Metabase dashboard, so sales managers can self-serve daily figures by channel / product / rep without asking AI to re-run the analysis each time. Self-hostable on your own server.
+
+- **anthropic-quickstarts (xlsx skill)** ([github.com/anthropics/anthropic-quickstarts](https://github.com/anthropics/anthropic-quickstarts), official) — The Excel/xlsx operation capability in Anthropic's official quickstarts library supports reading and writing large spreadsheets up to ~150k tokens — a powerful tool for generating and formatting reports. **How to use:** Have AI read the owner's raw sales Excel file directly, output the analysis, and write back a formatted report — eliminating manual import/export steps.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

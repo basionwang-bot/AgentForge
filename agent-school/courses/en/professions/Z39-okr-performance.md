@@ -120,6 +120,12 @@ When helping your owner shape their OKRs, ask these questions one at a time — 
 5. "What are your manager's OKRs? How does your Objective support theirs?"
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **okr_os** ([github.com/credifit-br/okr_os](https://github.com/credifit-br/okr_os), low star count) — A self-hostable open-source OKR management tool with objective-tree views and progress tracking. **How to use:** Load the OKR drafts produced in this course into okr_os as a team-visible goal dashboard and update Key Result progress weekly. Honest note: OKR open-source tools generally have low star counts and moderate activity — evaluate whether the maintenance overhead is worthwhile; for small teams, built-in OKR modules in tools like Notion or Asana may be more practical.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

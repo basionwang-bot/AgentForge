@@ -189,6 +189,12 @@ Human Resources / Administration
 [Date]
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **anthropic-quickstarts (docx/pdf skill)** ([github.com/anthropics/anthropic-quickstarts](https://github.com/anthropics/anthropic-quickstarts), official) — The Word/PDF operation capability in Anthropic's official quickstarts library handles documents up to ~150k tokens. **How to use:** Have AI write the handbook entries produced in this course directly into a formatted Word template and export a PDF version for company-wide distribution. **⚠️ Important notice (not legal advice):** Employee handbooks touch legally sensitive areas — attendance policy, compensation terms, disciplinary procedures, and employment law compliance. **The final draft must be reviewed and approved by your HR lead and a qualified legal advisor before publication.** AI drafts must never be issued as official policy documents without human legal review.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

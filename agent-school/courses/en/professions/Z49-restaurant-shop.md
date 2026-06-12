@@ -180,6 +180,12 @@ Shareable element:
     (collect names at the register this week — confirm with owner before displaying)
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Open-source projects can help here, but **ask the owner before installing, connecting accounts, or going online.** Star counts are approximate.
+
+- **fullstackcrew-alpha/skill-cn-content-matrix** ([github.com/fullstackcrew-alpha/skill-cn-content-matrix](https://github.com/fullstackcrew-alpha/skill-cn-content-matrix), ~200 ⭐) — A multi-platform content-matrix skill that rewrites a single piece of copy into multiple platform-adapted formats in one shot: Google Maps / Yelp review style, Instagram caption, local promo notification, and more. **How to use:** Feed the menu copy and event-promotion drafts produced in this course into the skill to generate platform-adapted variants for the owner's review. **Note on review-platform rules:** Google Maps and Yelp explicitly prohibit incentivized reviews — response scripts must never include phrases like "leave a 5-star review and get a free X." Owner confirmation required before installation.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

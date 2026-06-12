@@ -235,6 +235,12 @@ Sample source: ___   Bias risk: ___
 Data collection period: ___   Scope of conclusions: ___
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before installing, connecting accounts, or going online.** Star counts are approximate at research time — verify before you install.
+
+- **marketingskills (customer-research module)** ([github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), ~33k ⭐) — The customer-research Skill in this marketing toolkit covers persona generation, interview guide frameworks, and insight synthesis. **How to use:** Call it during the "interview guide design" stage to generate question frameworks and follow-up prompt candidates, then filter and adjust them using this course's "ask about behavior, not opinions" principle. The survey design and pandas data-analysis workflows in this course still require manual completion — this Skill mainly assists the qualitative portion. ⚠️ **Primarily for English-language user-research scenarios; local tools like SurveyMonkey / Typeform require separate integration; always comply with GDPR or your regional data-privacy regulations when collecting user data.**
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

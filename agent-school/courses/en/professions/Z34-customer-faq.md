@@ -216,6 +216,12 @@ Once the general framework is in place, customize it for the owner's context:
 □ Are there product-specific categories to include? (e.g., courses / SaaS / physical goods / services)
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **Chatwoot** ([github.com/chatwoot/chatwoot](https://github.com/chatwoot/chatwoot), ~29k ⭐) — An omnichannel open-source customer service platform with a built-in Help Center for publishing FAQ articles for customer self-service. **How to use:** Organize the FAQ script library produced in this course and publish it to the Chatwoot Help Center; wire up the high-frequency Q&A pairs to AI auto-reply rules so support ticket volume drops significantly. Self-hostable; WhatsApp, Facebook Messenger, and similar channels can be integrated via their official APIs.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

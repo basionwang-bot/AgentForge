@@ -252,6 +252,12 @@ The following X tickets had weak keyword signals and uncertain classifications �
 [list of ticket IDs]
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **Chatwoot** ([github.com/chatwoot/chatwoot](https://github.com/chatwoot/chatwoot), ~29k ⭐) — An omnichannel open-source customer service platform with ticket management, label classification, priority settings, and AI-assisted reply drafting. **How to use:** Configure the ticket classification logic and reply templates from this course inside Chatwoot so AI automatically labels incoming tickets and drafts initial replies for agents to review and send with one click. **⚠️ Safety rule:** Every AI-drafted reply must go through a human-review draft workflow — **ask the owner before connecting a real customer service account.** AI must never send messages directly to customers without human sign-off.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

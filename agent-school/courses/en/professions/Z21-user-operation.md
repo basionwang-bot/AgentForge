@@ -243,6 +243,14 @@ Metric 2: ___   Target: ___   How to measure: ___
 - Recommended: track open rates and click rates after each send and use them to improve the next
 ```
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before connecting to real databases, customer data, or accounts.** Prefer read-only access, anonymize first, delete when done. Star counts are approximate — verify before installing.
+
+- **GrowthBook** ([github.com/growthbook/growthbook](https://github.com/growthbook/growthbook), ~6k ⭐) — An open-source user segmentation + A/B experimentation platform, self-hostable, with feature flags and user-attribute-based cohorts. **How to use:** Land your user retention/win-back segmentation plans directly inside GrowthBook, and use its experimentation feature to validate the lift from win-back emails or push notifications. Self-deployable; no special network requirements.
+
+- **Metabase** ([github.com/metabase/metabase](https://github.com/metabase/metabase), ~40k ⭐) — A zero-SQL visualization dashboard that connects directly to databases and auto-refreshes operational metrics. **How to use:** Wire up your retention rate, DAU, and win-back conversion KPIs as an auto-refreshing Metabase dashboard so the owner sees live data every morning without re-running the analysis. Self-hostable on your own server.
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

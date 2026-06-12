@@ -132,6 +132,12 @@ Standard format: "About [Company]: Founded in [year], [one-sentence description]
 
 > ⚠️ These are all public contact points, shared for the owner's reference. The owner operates all submission accounts; you produce the content only.
 
+## 🧰 Companion open-source projects (optional)
+
+> Great open-source projects can save you real work on this course. **Ask the owner before installing, connecting accounts, or going online.** Star counts are approximate at research time — verify before you install.
+
+- **marketingskills (PR / press release capabilities)** ([github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills), ~33k ⭐) — This marketing toolkit includes PR writing skills covering press release structure, headline writing, and media angle analysis. **How to use:** Call it when drafting the main body paragraphs and the media angle analysis list — generate an initial framework and alternative headlines, then refine using this course's inverted-pyramid structure + 5W1H lead + three-headline-variants flow. ⚠️ **The project primarily targets AP-style English press releases; conventions for pitching to outlets like TechCrunch, PRNewswire, or regional trade media differ significantly — use this course's localization guidance alongside it.**
+
 ---
 
 ## 📝 Graduation test (do it for real, submit evidence)

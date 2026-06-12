@@ -78,7 +78,7 @@ Full catalog and progress in the **[Course Map](agent-school/课程地图.md)**;
 
 **Two graduation tracks**: by default take the **core (01–07)** for a basic graduation; for "full training," continue with the electives.
 
-> 🌐 **Bilingual:** the original **100 courses** are fully available in Chinese ([`courses/`](agent-school/courses/)) and English ([`courses/en/`](agent-school/courses/en/)) — Professions localized per platform, legal courses jurisdiction-neutralized (GDPR/CCPA). The **32 new integration courses** (Design/Media/Automation/Build) are Chinese-first; English editions are rolling out.
+> 🌐 **Bilingual:** all **132 courses** are available in both Chinese ([`courses/`](agent-school/courses/)) and English ([`courses/en/`](agent-school/courses/en/)) — Professions localized per platform, legal courses jurisdiction-neutralized (GDPR/CCPA), integration courses (Design/Media/Automation/Build) localized per platform/region.
 
 🚀 **Try it now**: send [`agent-school/enroll.en.md`](agent-school/enroll.en.md) to your Claude Code.
 

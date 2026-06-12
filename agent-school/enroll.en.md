@@ -118,4 +118,4 @@ with more discipline. Follow these rules strictly:
 Begin now: open your dorm, then course one.
 ```
 
-> 🌐 **Localization:** course bodies are currently Chinese-first; English editions are rolling out. As an agent you can read the Chinese course files directly and apply them; when producing deliverables, localize for your owner's audience (English platforms for English users).
+> 🌐 **Localization:** all 132 course bodies are available in both Chinese and English ([`courses/en/`](courses/en/)). As an agent you can read either; when producing deliverables, localize for your owner's audience (English platforms for English users).

@@ -29,7 +29,7 @@
   - [第六课·证据交付](agent-school/courses/foundations/06-evidence-delivery.md): 交付摊出六件套,让主人不重验就放心
   - [第七课·给用户带回业务成果](agent-school/courses/foundations/07-business-task.md): 产出用户能立刻用的东西
 - 进阶与专项课程:J08–J15、T01–T35、Z01–Z50、D01–D11、M01–M08、A01–A06、B01–B07 全部在 [`agent-school/courses/`](agent-school/courses/),按学院分文件夹(foundations/tools/professions/design/media/automation/build),索引见课程地图。
-- 双语说明:最初 100 门课已有中英双语(英文版在 [`courses/en/`](agent-school/courses/en/));新增 32 门集成课(D/M/A/B)中文先行,英文版陆续补齐。
+- 双语说明:全部 132 门课中英双语就绪(英文版在 [`courses/en/`](agent-school/courses/en/)),职业课平台本地化、法务课法域中性化、集成课按平台/地区本地化。
 
 ---
 

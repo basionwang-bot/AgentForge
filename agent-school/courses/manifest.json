@@ -12,8 +12,176 @@
     "automation": "自动化",
     "build": "造物"
   },
-  "count": 232,
+  "count": 264,
   "courses": [
+    {
+      "code": "A01",
+      "title": "Lesson A01 · Node-RED: Draw Your First Automation Pipeline by \"Connecting the Dots\"",
+      "faculty": "automation",
+      "lang": "en",
+      "path": "agent-school/courses/en/automation/A01-node-red.md"
+    },
+    {
+      "code": "A02",
+      "title": "Lesson A02 · Automatisch: Build Your First \"When A Happens, Do B\" Automation from Scratch",
+      "faculty": "automation",
+      "lang": "en",
+      "path": "agent-school/courses/en/automation/A02-automatisch.md"
+    },
+    {
+      "code": "A03",
+      "title": "Lesson A03 · Activepieces: MIT-Licensed Open Source + 280 Tools Exposed as MCP for Claude to Call",
+      "faculty": "automation",
+      "lang": "en",
+      "path": "agent-school/courses/en/automation/A03-activepieces.md"
+    },
+    {
+      "code": "A04",
+      "title": "Lesson A04 · n8n + n8n-mcp: Let Claude Build Your Automation Workflows in Plain English",
+      "faculty": "automation",
+      "lang": "en",
+      "path": "agent-school/courses/en/automation/A04-n8n.md"
+    },
+    {
+      "code": "A05",
+      "title": "Lesson A05 · Dify: Build a Self-Hostable, LLM-Friendly AI Pipeline — \"Question → Retrieval → AI Answer → Action\"",
+      "faculty": "automation",
+      "lang": "en",
+      "path": "agent-school/courses/en/automation/A05-dify.md"
+    },
+    {
+      "code": "A06",
+      "title": "Lesson A06 · Windmill: Turn a Python/TypeScript Script into a Scheduled or Webhook-Triggered Service",
+      "faculty": "automation",
+      "lang": "en",
+      "path": "agent-school/courses/en/automation/A06-windmill.md"
+    },
+    {
+      "code": "B01",
+      "title": "Lesson B01 · bolt.diy: Build a Full-Stack App in One Sentence",
+      "faculty": "build",
+      "lang": "en",
+      "path": "agent-school/courses/en/build/B01-bolt-diy.md"
+    },
+    {
+      "code": "B02",
+      "title": "Lesson B02 · Dyad: Local-First, Privacy-First AI Website Builder — Code Is 100% Yours",
+      "faculty": "build",
+      "lang": "en",
+      "path": "agent-school/courses/en/build/B02-dyad.md"
+    },
+    {
+      "code": "B03",
+      "title": "Lesson B03 · ToolJet: No-Code Business Back-Office — Even a Small Shop Can Have Its Own Admin System",
+      "faculty": "build",
+      "lang": "en",
+      "path": "agent-school/courses/en/build/B03-tooljet.md"
+    },
+    {
+      "code": "B04",
+      "title": "Lesson B04 · NocoDB: Turn Your Database Into Airtable — Self-Hosted, No-Code Data Management",
+      "faculty": "build",
+      "lang": "en",
+      "path": "agent-school/courses/en/build/B04-nocodb.md"
+    },
+    {
+      "code": "B05",
+      "title": "Lesson B05 · Plane: Open-Source Project Management — Self-Host a Team Board and Run Sprints",
+      "faculty": "build",
+      "lang": "en",
+      "path": "agent-school/courses/en/build/B05-plane.md"
+    },
+    {
+      "code": "B06",
+      "title": "Lesson B06 · Product Manager Skills: Let AI Be Your Product Manager",
+      "faculty": "build",
+      "lang": "en",
+      "path": "agent-school/courses/en/build/B06-pm-skills.md"
+    },
+    {
+      "code": "B07",
+      "title": "Lesson B07 · PRD Creator: Turn an Idea Into a Professional Product Requirements Document",
+      "faculty": "build",
+      "lang": "en",
+      "path": "agent-school/courses/en/build/B07-prd-creator.md"
+    },
+    {
+      "code": "D01",
+      "title": "Lesson D01 · screenshot-to-code: Turn a Screenshot into a Web Page",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D01-screenshot-to-code.md"
+    },
+    {
+      "code": "D02",
+      "title": "Lesson D02 · OpenUI: Describe a Component, See It Instantly",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D02-openui.md"
+    },
+    {
+      "code": "D03",
+      "title": "Lesson D03 · make-real-starter: Whiteboard Sketch → Real Web Page",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D03-make-real.md"
+    },
+    {
+      "code": "D04",
+      "title": "Lesson D04 · ComfyUI: Local AI Image Generation, Total Freedom",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D04-comfyui.md"
+    },
+    {
+      "code": "D05",
+      "title": "Lesson D05 · Brand Artifacts: Wrap Your Work in a Consistent Brand Look",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D05-brand-artifacts.md"
+    },
+    {
+      "code": "D06",
+      "title": "Lesson D06 · Figma MCP: Let the Agent Read Your Design Files",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D06-figma-mcp.md"
+    },
+    {
+      "code": "D07",
+      "title": "Lesson D07 · shadcn/ui: Own Your Design System",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D07-shadcn-ui.md"
+    },
+    {
+      "code": "D08",
+      "title": "Lesson D08 · Icons Done Right, Quality Doubled",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D08-icons.md"
+    },
+    {
+      "code": "D09",
+      "title": "Lesson D09 · One Sentence → Social Media Graphics + Cover Images",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D09-social-card.md"
+    },
+    {
+      "code": "D10",
+      "title": "Lesson D10 · Slides as Code",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D10-slides-as-code.md"
+    },
+    {
+      "code": "D11",
+      "title": "Lesson D11 · Give Claude the Ability to Draw (Advanced)",
+      "faculty": "design",
+      "lang": "en",
+      "path": "agent-school/courses/en/design/D11-image-mcp.md"
+    },
     {
       "code": "01",
       "title": "Lesson 1 · Explore First, Then Act",
@@ -118,6 +286,62 @@
       "faculty": "foundations",
       "lang": "en",
       "path": "agent-school/courses/en/foundations/J15-progress-comms.md"
+    },
+    {
+      "code": "M01",
+      "title": "Lesson M01 · auto-editor: Let AI Automatically Cut Pauses and Filler",
+      "faculty": "media",
+      "lang": "en",
+      "path": "agent-school/courses/en/media/M01-auto-editor.md"
+    },
+    {
+      "code": "M02",
+      "title": "Lesson M02 · faster-whisper: Auto-Generate Timestamped Subtitles",
+      "faculty": "media",
+      "lang": "en",
+      "path": "agent-school/courses/en/media/M02-faster-whisper.md"
+    },
+    {
+      "code": "M03",
+      "title": "Lesson M03 · edge-tts: Zero-Cost, One-Command Voiceover Generation",
+      "faculty": "media",
+      "lang": "en",
+      "path": "agent-school/courses/en/media/M03-edge-tts.md"
+    },
+    {
+      "code": "M04",
+      "title": "Lesson M04 · GPT-SoVITS: Clone a Voice from 1 Minute of Sample Audio",
+      "faculty": "media",
+      "lang": "en",
+      "path": "agent-school/courses/en/media/M04-gpt-sovits.md"
+    },
+    {
+      "code": "M05",
+      "title": "Lesson M05 · YuE: AI Composition — Generate BGM From a Theme",
+      "faculty": "media",
+      "lang": "en",
+      "path": "agent-school/courses/en/media/M05-ai-music.md"
+    },
+    {
+      "code": "M06",
+      "title": "Lesson M06 · DeepFilterNet: One Command to Denoise Noisy Recordings to Broadcast Quality",
+      "faculty": "media",
+      "lang": "en",
+      "path": "agent-school/courses/en/media/M06-deepfilternet.md"
+    },
+    {
+      "code": "M07",
+      "title": "Lesson M07 · MoneyPrinterTurbo: Input a Topic, Get a Finished Short Video — Fully Automated",
+      "faculty": "media",
+      "lang": "en",
+      "path": "agent-school/courses/en/media/M07-moneyprinter.md"
+    },
+    {
+      "code": "M08",
+      "title": "Lesson M08 · videocut-skills: Let Claude Be the Editor — End-to-End Podcast Cutting",
+      "faculty": "media",
+      "lang": "en",
+      "path": "agent-school/courses/en/media/M08-videocut-skills.md"
     },
     {
       "code": "Z01",
